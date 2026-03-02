@@ -30,13 +30,13 @@ const Mat7 = () => {
     <div 
       ref={ref} 
       id="mat-7" 
-      className="bg-white scroll-mt-20 rounded-2xl shadow-2xl overflow-hidden p-6 md:p-10">
-      <h2 className="text-xl md:text-3xl font-bold text-center text-slate-700 mb-8">Saiba Mais</h2>
-      <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-300">
+      className="bg-white dark:bg-slate-800 scroll-mt-20 rounded-2xl shadow-2xl overflow-hidden p-6 md:p-10">
+      <h2 className="text-xl md:text-3xl font-bold text-center text-slate-700 dark:text-slate-200 mb-8">Saiba Mais</h2>
+      <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-300 dark:divide-slate-700">
         {/* Bloco 1 - Vídeo tutorial */}
         <div className="md:w-1/2 px-4 md:px-8 pb-6 md:pb-0 flex flex-col items-center text-center md:text-left">
           <FaVideo className="text-blue-600 text-3xl mb-4" />
-          <p className="text-slate-700 text-sm md:text-base">
+          <p className="text-slate-700 dark:text-slate-200 text-sm md:text-base">
             <strong>Vídeo tutorial de como usar o PADLET:</strong><br />
             Descubra como utilizar essa poderosa ferramenta colaborativa com um vídeo direto ao ponto.<br />
             <a
@@ -53,7 +53,7 @@ const Mat7 = () => {
         {/* Bloco 2 - Diário de bordo */}
         <div className="md:w-1/2 px-4 md:px-8 pt-6 md:pt-0 flex flex-col items-center text-center md:text-left">
           <FaBookOpen className="text-green-600 text-3xl mb-4" />
-          <p className="text-slate-700 text-sm md:text-base">
+          <p className="text-slate-700 dark:text-slate-200 text-sm md:text-base">
             <strong>Diário de Bordo:</strong><br />
             Explore as possibilidades de escrita para transformar sua sala de aula em uma comunidade de aprendizagem.<br />
             <a

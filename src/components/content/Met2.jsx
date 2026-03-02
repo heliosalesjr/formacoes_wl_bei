@@ -71,15 +71,15 @@ const Met2 = () => {
                   Aprendizagem Baseada em Projetos
                 </h2>
                 <p className="text-sm md:text-base text-slate-100 leading-relaxed">
-                  A Aprendizagem Baseada em Projetos é uma <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">metodologia ativa</strong> que se apoia na resolução de um problema
-                  ou no desenvolvimento de um projeto que tenha <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">relação com a vida dos estudantes fora da sala de aula.</strong>
+                  A Aprendizagem Baseada em Projetos é uma <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">metodologia ativa</strong> que se apoia na resolução de um problema
+                  ou no desenvolvimento de um projeto que tenha <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">relação com a vida dos estudantes fora da sala de aula.</strong>
                   {' '}Os alunos selecionam muitos aspectos de sua tarefa e são motivados por problemas do mundo real que podem,
-                  e em muitos casos irão, <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">contribuir para a sua comunidade</strong>. Para desenvolver um projeto, os estudantes
-                  precisam lidar com <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">questões interdisciplinares</strong>, trabalhar em equipe, tomar decisões e <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">assumir o protagonismo</strong>.
+                  e em muitos casos irão, <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">contribuir para a sua comunidade</strong>. Para desenvolver um projeto, os estudantes
+                  precisam lidar com <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">questões interdisciplinares</strong>, trabalhar em equipe, tomar decisões e <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">assumir o protagonismo</strong>.
                   <br /><br />
-                  O educador tem um papel muito importante nesse tipo de abordagem, uma vez que ele se torna o <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">mediador
+                  O educador tem um papel muito importante nesse tipo de abordagem, uma vez que ele se torna o <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">mediador
                   das relações de aprendizagem</strong> e o orientador que deve ajudar o estudante a encontrar sentido naquilo
-                  que está aprendendo, criando também <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">situações-problema</strong> cujo foco são essas relações.
+                  que está aprendendo, criando também <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">situações-problema</strong> cujo foco são essas relações.
                 </p>
               </div>
             </motion.div>
@@ -99,9 +99,9 @@ const Met2 = () => {
           >
             <div className="max-w-3xl">
               <p className="text-base md:text-lg font-medium text-slate-100 leading-relaxed">
-                "A <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">investigação dos alunos</strong> é profundamente <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">integrada à aprendizagem baseada em projetos</strong>, e como eles têm,
+                "A <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">investigação dos alunos</strong> é profundamente <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">integrada à aprendizagem baseada em projetos</strong>, e como eles têm,
                 em geral, algum poder de escolha em relação ao projeto do seu grupo e aos métodos a serem usados para desenvolvê-lo,
-                eles tendem a ter uma <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">motivação</strong> muito maior para trabalhar de forma diligente na <strong className="bg-slate-50 text-blue-800 px-1.5 py-0.5 rounded font-semibold">solução dos problemas</strong>".
+                eles tendem a ter uma <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">motivação</strong> muito maior para trabalhar de forma diligente na <strong className="bg-slate-50 dark:bg-slate-700 text-blue-800 dark:text-blue-300 px-1.5 py-0.5 rounded font-semibold">solução dos problemas</strong>".
                 <br /><br />
                 <span className="block mt-4 font-semibold">
                   – BENDER, W. Aprendizagem Baseada em Projetos. Editora Penso, 2014.
@@ -117,7 +117,7 @@ const Met2 = () => {
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
-        className="absolute bottom-4 right-4 z-30 bg-white text-blue-800 hover:bg-blue-100 rounded-full p-3 shadow-xl transition-all"
+        className="absolute bottom-4 right-4 z-30 bg-white dark:bg-slate-700 text-blue-800 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-slate-600 rounded-full p-3 shadow-xl transition-all"
         aria-label={expanded ? 'Voltar' : 'Expandir'}
       >
         {expanded ? <FaArrowLeft className="text-lg" /> : <FaPlus className="text-lg" />}

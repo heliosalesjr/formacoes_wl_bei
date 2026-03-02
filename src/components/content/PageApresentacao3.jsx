@@ -6,7 +6,7 @@ const PageApresentacao3 = () => {
   return (
     <div className="grid gap-6 md:grid-cols-2">
             {/* Second Component - FAQ */}
-            <div className="rounded-lg bg-white p-6 shadow-2xl">
+            <div className="rounded-lg bg-white dark:bg-slate-800 p-6 shadow-2xl">
               <h2 className="mb-4 text-2xl font-bold">Perguntas Frequentes</h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
@@ -34,7 +34,7 @@ const PageApresentacao3 = () => {
             </div>
 
             {/* Third Component - Image with hover effect */}
-            <div className="rounded-lg bg-white p-6 shadow-2xl">
+            <div className="rounded-lg bg-white dark:bg-slate-800 p-6 shadow-2xl">
               <div className="relative group">
                 <Image
                   src="/ph.jpg"

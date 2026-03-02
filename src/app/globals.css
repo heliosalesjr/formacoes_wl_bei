@@ -137,6 +137,19 @@ body {
   animation: bgShift 10s ease-in-out infinite alternate;
 }
 
+html.dark body {
+  background: linear-gradient(
+    125deg,
+    #064e3b 0%,
+    #0f172a 22%,
+    #0a0f1e 50%,
+    #0c1535 72%,
+    #1e3a8a 100%
+  );
+  background-size: 300% 300%;
+  animation: bgShift 10s ease-in-out infinite alternate;
+}
+
 @keyframes bgShift {
   0%   { background-position: 0% 0%;     }
   100% { background-position: 100% 100%; }

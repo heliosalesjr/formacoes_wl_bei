@@ -34,7 +34,7 @@ const Met5 = () => {
       ref={ref} 
       id="met-5"
       layout
-      className="scroll-mt-20 relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl bg-white"
+      className="scroll-mt-20 relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl bg-white dark:bg-slate-800"
       transition={{ duration: 1.2 }}
     >
       {/* Imagem e camada escura */}
@@ -102,7 +102,7 @@ const Met5 = () => {
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
-        className="absolute bottom-4 right-4 z-30 bg-white text-blue-600 hover:bg-blue-100 rounded-full px-5 py-3 shadow-xl transition-all flex items-center gap-2"
+        className="absolute bottom-4 right-4 z-30 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-slate-600 rounded-full px-5 py-3 shadow-xl transition-all flex items-center gap-2"
         aria-label={expanded ? 'Voltar' : 'Ver PDF'}
       >
         {expanded ? (

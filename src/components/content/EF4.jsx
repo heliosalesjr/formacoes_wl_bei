@@ -28,7 +28,7 @@ const EF4 = () => {
 
   return (
 
-    <div ref={ref} id="ef-4" className='scroll-mt-20 bg-white rounded-2xl shadow-2xl p-6 mb-8'>
+    <div ref={ref} id="ef-4" className='scroll-mt-20 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-6 mb-8'>
       <div className="relative min-h-[60vh] w-full">
         <Image
           src="/bei_banner.jpeg" // Caminho relativo à pasta /public
@@ -39,10 +39,10 @@ const EF4 = () => {
         />
       </div>
       <div className="px-6 py-8 max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4 text-center text-slate-800">
+        <h1 className="text-3xl font-bold mb-4 text-center text-slate-800 dark:text-slate-200">
           Compreendendo o programa da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span> e a Aprendizagem Baseada em Projetos
         </h1>
-        <p className="text-lg leading-relaxed text-slate-700">
+        <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-200">
           O Programa de Educação Financeira da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span> foi elaborado com o objetivo de levar para a sala de aula a Educação Financeira, ancorada na disciplina de Matemática, por meio de um material acessível, que amparado em problemas reais do dia a dia, pretende despertar e mobilizar a atenção do estudante para lidar de forma responsável com seus recursos ao mesmo que apreende conceitos fundamentais da Matemática.
         </p>
       </div>

@@ -71,23 +71,23 @@ const Mat3 = () => {
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className="absolute inset-0 z-20 overflow-y-auto px-6 py-10 text-slate-800 bg-emerald-50"
+            className="absolute inset-0 z-20 overflow-y-auto px-6 py-10 text-slate-800 dark:text-slate-200 bg-emerald-50 dark:bg-slate-800"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
           >
             <div className="max-w-3xl mx-auto">
-              <h3 className="text-xl md:text-2xl font-bold text-center mb-6 text-green-800">
+              <h3 className="text-xl md:text-2xl font-bold text-center mb-6 text-green-800 dark:text-white">
                 Primeiros Passos
               </h3>
               <ul className="space-y-4 text-base">
                 {steps.map((step, index) => (
                   <li
                     key={index}
-                    className={`bg-white p-4 rounded-xl shadow transition-all duration-300 border-l-4 `}
+                    className={`bg-white dark:bg-slate-800 p-4 rounded-xl shadow transition-all duration-300 border-l-4 `}
                   >
-                    <span className="font-semibold text-slate-600 mr-2">{index + 1}.</span>
+                    <span className="font-semibold text-slate-600 dark:text-slate-300 mr-2">{index + 1}.</span>
                     {step}
                   </li>
                 ))}
@@ -102,7 +102,7 @@ const Mat3 = () => {
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
-        className="absolute bottom-4 right-4 z-30 bg-white text-blue-700 hover:bg-emerald-100 rounded-full px-5 py-3 shadow-xl flex items-center gap-2 transition-all"
+        className="absolute bottom-4 right-4 z-30 bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 hover:bg-emerald-100 dark:hover:bg-slate-700 rounded-full px-5 py-3 shadow-xl flex items-center gap-2 transition-all"
         aria-label={expanded ? 'Voltar' : 'Primeiros Passos'}
       >
         {expanded ? <FaArrowLeft className="text-lg" /> : <><FaPlus className="text-lg" /> <span className="text-sm font-medium">Primeiros Passos</span></>}

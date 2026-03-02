@@ -62,13 +62,13 @@ const EF3 = () => {
     <div
       ref={ref}
       id="ef-3"
-      className="scroll-mt-20 bg-white p-6 md:p-10 rounded-2xl shadow-2xl overflow-x-auto"
+      className="scroll-mt-20 bg-white dark:bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl overflow-x-auto"
     >
       <div className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-700 mb-2 py-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200 mb-2 py-4">
           Diferenças entre Matemática Financeira e Educação Financeira
         </h1>
-        <p className="text-slate-600 text-base md:text-lg max-w-2xl mx-auto">
+        <p className="text-slate-600 dark:text-slate-300 text-base md:text-lg max-w-2xl mx-auto">
           No programa Aprendendo a Lidar com Dinheiro, como educadores(as), vocês terão a
           oportunidade de trabalhar com os dois conhecimentos de forma integrada.
         </p>
@@ -76,24 +76,24 @@ const EF3 = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Títulos com ícones */}
-        <div className="bg-orange-100 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-pink-400 text-center">
+        <div className="bg-orange-100 dark:bg-orange-900/30 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-pink-400 text-center">
           <FaPiggyBank className="text-pink-500 text-3xl" />
-          <h2 className="text-xl font-bold text-orange-800">Educação Financeira</h2>
+          <h2 className="text-xl font-bold text-orange-800 dark:text-white">Educação Financeira</h2>
         </div>
 
-        <div className="bg-blue-100 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-blue-400 text-center">
+        <div className="bg-blue-100 dark:bg-blue-900/30 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-blue-400 text-center">
           <FaCalculator className="text-yellow-500 text-3xl" />
-          <h2 className="text-xl font-bold text-blue-800">Matemática Financeira</h2>
+          <h2 className="text-xl font-bold text-blue-800 dark:text-white">Matemática Financeira</h2>
         </div>
 
         {/* Linhas de conteúdo */}
         {dados.map(([matematica, educacao], index) => (
           <React.Fragment key={index}>
-            <div className="bg-orange-50 p-4 rounded-lg flex justify-center items-center text-center hover:bg-orange-200/60 transition duration-300">
-              <p className="text-sm md:text-base text-slate-700">{matematica}</p>
+            <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg flex justify-center items-center text-center hover:bg-orange-200/60 dark:hover:bg-orange-900/40 transition duration-300">
+              <p className="text-sm md:text-base text-slate-700 dark:text-slate-200">{matematica}</p>
             </div>
-            <div className="bg-blue-50 p-4 rounded-lg flex justify-center items-center text-center hover:bg-blue-200/60 transition duration-300">
-              <p className="text-sm md:text-base text-slate-700">{educacao}</p>
+            <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg flex justify-center items-center text-center hover:bg-blue-200/60 dark:hover:bg-blue-900/40 transition duration-300">
+              <p className="text-sm md:text-base text-slate-700 dark:text-slate-200">{educacao}</p>
             </div>
           </React.Fragment>
         ))}

@@ -15,12 +15,12 @@ const SectionCard = ({ icon: Icon, title, children, color = "" }) => (
     viewport={{ once: true }}
     className="mx-2 md:mx-4"
   >
-    <Card className={`bg-white p-8 rounded-2xl shadow-md border border-blue-200`}>  
+    <Card className={`bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-blue-200 dark:border-blue-800`}>  
       <CardHeader className="flex items-center gap-4">
         <Icon className="w-6 h-6 text-blue-700" />
-        <CardTitle className="text-xl text-slate-800 font-semibold">{title}</CardTitle>
+        <CardTitle className="text-xl text-slate-800 dark:text-slate-200 font-semibold">{title}</CardTitle>
       </CardHeader>
-      <CardContent className="mt-4 text-slate-700 text-justify leading-relaxed space-y-4 font-medium">
+      <CardContent className="mt-4 text-slate-700 dark:text-slate-200 text-justify leading-relaxed space-y-4 font-medium">
         {children}
       </CardContent>
     </Card>
@@ -80,10 +80,10 @@ export default function Mat4() {
   return (
     <div ref={ref} 
         id="mat-444" 
-        className="scroll-mt-20 max-w-5xl mx-auto my-16 p-6 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl shadow-2xl pt-16 pb-16">
+        className="scroll-mt-20 max-w-5xl mx-auto my-16 p-6 bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 rounded-2xl shadow-2xl pt-16 pb-16">
       <motion.h1
         
-        className="scroll-mt-20 text-center text-3xl md:text-4xl font-bold text-slate-700 mb-8"
+        className="scroll-mt-20 text-center text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200 mb-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -147,7 +147,7 @@ export default function Mat4() {
             <li>→ Bate-papo em pequenos grupos</li>
             <li>→ Roda de conversa</li>
             <li>→ "A pessoa mais importante da minha vida"</li>
-            <p className='text-blue-900 pt-4'>(Estratégias descritas nas páginas 14 a 18 do Caderno do Educador)</p>
+            <p className='text-blue-900 dark:text-blue-300 pt-4'>(Estratégias descritas nas páginas 14 a 18 do Caderno do Educador)</p>
           </ul>
         </SectionCard>
 
@@ -172,7 +172,7 @@ export default function Mat4() {
             <li>→ Sondagem por meio do Google Formulários</li>
             <li>→ Quiz sobre conteúdo de matemática do ano anterior</li>
             <li>→ Provinhas (importante deixar claro aos estudantes que não vale nota)</li>
-            <p className='text-blue-900 pt-4'>(Estratégias descritas nas páginas 14 a 18 do Caderno do Educador)</p>
+            <p className='text-blue-900 dark:text-blue-300 pt-4'>(Estratégias descritas nas páginas 14 a 18 do Caderno do Educador)</p>
           </ul>
         </SectionCard>
       </div>

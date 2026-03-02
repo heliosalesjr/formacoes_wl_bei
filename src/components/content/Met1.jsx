@@ -30,12 +30,12 @@ const Met1 = () => {
 
 
   return (
-    <div ref={ref} id="met-1" className="scroll-mt-20 bg-gradient-to-b from-white to-blue-500/80 py-10 px-4 md:px-16 relative overflow-hidden rounded-2xl shadow-2xl">
+    <div ref={ref} id="met-1" className="scroll-mt-20 bg-gradient-to-b from-white to-blue-500/80 dark:from-slate-900 dark:to-blue-900 py-10 px-4 md:px-16 relative overflow-hidden rounded-2xl shadow-2xl">
       {/* Título */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-slate-700 ">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-slate-700 dark:text-slate-200">
         Metodologias Ativas
       </h2>
-      <p className="text-lg leading-relaxed text-slate-700 my-8">
+      <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-200 my-8">
       <strong>Metodologias ativas </strong>são uma série de técnicas, procedimentos e processos com a finalidade de auxiliar a aprendizagem dos estudantes. São <strong>ativas</strong> porque consistem em práticas pedagógicas que pressupõem a realização de atividades práticas que estimulam o protagonismo dos jovens. Por meio das metodologias ativas, são trabalhadas habilidades como o pensamento crítico e criativo e a consciência de que há várias maneiras de realizar uma tarefa ou superar um desafio. Elas:
     </p>
       {/* Destaques iniciais */}
@@ -56,42 +56,42 @@ const Met1 = () => {
 
       {/* Cards de metodologias */}
       <div className="space-y-8 max-w-3xl mx-auto ">
-      <div className="bg-white border-l-8 border-yellow-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
+      <div className="bg-white dark:bg-slate-800 border-l-8 border-yellow-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
 
           <FaProjectDiagram className="text-yellow-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800">Aprendizagem Baseada em Projetos (ABP)</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Aprendizagem Baseada em Projetos (ABP)</h3>
+            <p className="text-slate-600 dark:text-slate-300 text-sm">
               Os alunos aprendem ao desenvolver projetos aplicáveis no mundo real.
             </p>
           </div>
         </div>
 
-        <div className="bg-white border-l-8 border-pink-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
+        <div className="bg-white dark:bg-slate-800 border-l-8 border-pink-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
           <FaSyncAlt className="text-pink-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800">Rotação por Estações</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Rotação por Estações</h3>
+            <p className="text-slate-600 dark:text-slate-300 text-sm">
               Os alunos circulam por diferentes atividades e recursos, por estações, em uma mesma aula.
             </p>
           </div>
         </div>
 
-        <div className="bg-white border-l-8 border-orange-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
+        <div className="bg-white dark:bg-slate-800 border-l-8 border-orange-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
           <FaGamepad className="text-orange-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800">Gamificação</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Gamificação</h3>
+            <p className="text-slate-600 dark:text-slate-300 text-sm">
               Uso de elementos de jogos, como desafios e recompensas, para estimular a participação e o engajamento.
             </p>
           </div>
         </div>
 
-        <div className="bg-white border-l-8 border-blue-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
+        <div className="bg-white dark:bg-slate-800 border-l-8 border-blue-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
           <FaChalkboardTeacher className="text-blue-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800">Sala de Aula Invertida</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Sala de Aula Invertida</h3>
+            <p className="text-slate-600 dark:text-slate-300 text-sm">
               O estudante acessa conteúdos antes da aula e utiliza o tempo em sala para discussões e práticas.
             </p>
           </div>

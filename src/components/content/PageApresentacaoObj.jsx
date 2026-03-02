@@ -22,13 +22,13 @@ const PageApresentacaoObj = () => {
     <section
       ref={ref}
       id="objetivos-formacao"
-      className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 space-y-10"
+      className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 p-8 shadow-2xl border border-slate-100 dark:border-slate-700 space-y-10"
     >
       {/* Título principal */}
       <div className="text-center space-y-4">
         <div className="flex items-center justify-center gap-3">
           
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent dark:bg-none dark:text-white">
             Objetivos da Formação
           </h1>
           
@@ -36,14 +36,14 @@ const PageApresentacaoObj = () => {
       </div>
 
       {/* Objetivo geral */}
-      <div className="bg-white rounded-lg shadow-lg border border-slate-200 p-6 space-y-4">
+      <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700 p-6 space-y-4">
         <div className="flex items-center gap-3">
           <FaBullseye className="text-green-600 text-2xl" />
-          <h2 className="text-2xl font-semibold text-slate-800">
+          <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
             Objetivo Geral
           </h2>
         </div>
-        <p className="text-slate-700 leading-relaxed">
+        <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
           Capacitar educadores para planejar, implementar e avaliar atividades
           da coleção <strong>Aprendendo a Lidar com Dinheiro</strong>,
           promovendo a integração da educação financeira no currículo escolar
@@ -52,10 +52,10 @@ const PageApresentacaoObj = () => {
       </div>
 
       {/* Objetivos específicos */}
-      <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200 p-6 space-y-6">
+      <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/40 dark:to-blue-900/60 rounded-lg border border-green-200 dark:border-green-700 p-6 space-y-6">
         <div className="flex items-center gap-3">
           <FaListUl className="text-blue-600 text-2xl" />
-          <h2 className="text-2xl font-semibold text-slate-800">
+          <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
             Objetivos Específicos
           </h2>
         </div>
@@ -63,7 +63,7 @@ const PageApresentacaoObj = () => {
         <div className="space-y-5">
           <div className="flex items-start gap-3">
             <FaRegLightbulb className="text-green-600 mt-1" />
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
               Compreender os fundamentos e a metodologia do Programa de
               Educação Financeira da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, mapeando seus princípios, estrutura e
               etapas de aplicação, para orientar o uso coerente da coleção em
@@ -73,7 +73,7 @@ const PageApresentacaoObj = () => {
 
           <div className="flex items-start gap-3">
             <FaRegLightbulb className="text-green-600 mt-1" />
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
               Desenvolver habilidades de planejamento e adaptação de aulas com
               projetos didáticos em educação financeira, de modo que as
               atividades se ajustem à realidade dos estudantes e ao contexto
@@ -83,7 +83,7 @@ const PageApresentacaoObj = () => {
 
           <div className="flex items-start gap-3">
             <FaRegLightbulb className="text-green-600 mt-1" />
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
               Aplicar instrumentos de monitoramento e avaliação contínua das
               atividades desenvolvidas, consolidando registros, promovendo
               reflexões e ajustes ao longo da implementação do programa.

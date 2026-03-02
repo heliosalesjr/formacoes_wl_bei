@@ -248,18 +248,18 @@ export default function EncerramentoQuiz() {
   ).length;
 
   return (
-    <div className="rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100">
+    <div className="rounded-xl bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 p-8 shadow-2xl border border-slate-100 dark:border-slate-700">
       <div
         ref={ref}
         id="modulo1-quiz"
         className="flex items-center justify-center gap-3 mb-8"
       >
-        <div className="scroll-mt-20 mt-8 bg-white text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent pb-8 p-4">
+        <div className="scroll-mt-20 mt-8 bg-white dark:bg-slate-800 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:bg-none dark:text-white pb-8 p-4">
             Quiz do Módulo 1
           </h2>
 
-          <p className="text-slate-700 text-base md:text-lg max-w-3xl mx-auto">
+          <p className="text-slate-700 dark:text-slate-200 text-base md:text-lg max-w-3xl mx-auto">
             Para encerrar este módulo, que tal verificar o quanto absorveu do conteúdo? 
             Responda ao quiz para consolidar sua aprendizagem e refletir sobre os principais 
             pontos do Módulo 1 sobre Educação Financeira.
@@ -268,21 +268,21 @@ export default function EncerramentoQuiz() {
       </div>
 
       {Object.keys(respostas).length > 0 && (
-        <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <p className="text-center text-blue-700 font-medium">
+        <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg border border-blue-200 dark:border-blue-800">
+          <p className="text-center text-blue-700 dark:text-blue-400 font-medium">
             Progresso: {perguntasCorretas} de {perguntas.length} perguntas corretas
           </p>
         </div>
       )}
 
-      <div className="space-y-10 text-slate-700">
+      <div className="space-y-10 text-slate-700 dark:text-slate-200">
         {perguntas.map((pergunta, perguntaIndex) => {
           const respostaUsuario = respostas[pergunta.id];
 
           return (
             <div key={pergunta.id} className="space-y-4">
               <p className="text-xl font-medium">
-                <span className="text-blue-600 font-bold">{pergunta.id}.</span>{" "}
+                <span className="text-blue-600 dark:text-blue-400 font-bold">{pergunta.id}.</span>{" "}
                 {pergunta.enunciado}
               </p>
               <div className="space-y-3">
@@ -292,10 +292,10 @@ export default function EncerramentoQuiz() {
 
                   const cor =
                     selecionada && opcaoIndex === pergunta.correta
-                      ? "bg-green-100 border-green-400 text-green-800 font-semibold"
+                      ? "bg-green-100 dark:bg-green-900/40 border-green-400 dark:border-green-700 text-green-800 dark:text-green-300 font-semibold"
                       : selecionada && opcaoIndex !== pergunta.correta
-                      ? "bg-red-100 border-red-400 text-red-800"
-                      : "bg-white hover:bg-slate-100 border-slate-300";
+                      ? "bg-red-100 dark:bg-red-900/40 border-red-400 dark:border-red-700 text-red-800 dark:text-red-300"
+                      : "bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border-slate-300 dark:border-slate-700";
 
                   return (
                     <button
@@ -322,7 +322,7 @@ export default function EncerramentoQuiz() {
             <AlertDialogTitle>
               {feedback.correta ? "✅ Resposta correta!" : "❌ Resposta incorreta"}
             </AlertDialogTitle>
-            <AlertDialogDescription className="text-slate-600 mt-2">
+            <AlertDialogDescription className="text-slate-600 dark:text-slate-300 mt-2">
               {feedback.mensagem}
             </AlertDialogDescription>
           </AlertDialogHeader>

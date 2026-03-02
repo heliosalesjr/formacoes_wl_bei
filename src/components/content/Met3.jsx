@@ -21,7 +21,7 @@ const cards = [
       "Maior engajamento e motivação",
     ],
     icon: BookOpenCheck,
-    color: "bg-green-100",
+    color: "bg-green-100 dark:bg-slate-700",
   },
   {
     title: "SITUAÇÕES DO MUNDO REAL",
@@ -30,7 +30,7 @@ const cards = [
       "Aplicação prática do conhecimento",
     ],
     icon: Globe,
-    color: "bg-blue-100",
+    color: "bg-blue-100 dark:bg-slate-700",
   },
   {
     title: "INTERDISCIPLINARIDADE",
@@ -39,7 +39,7 @@ const cards = [
       "Conexões entre teoria e prática",
     ],
     icon: Layers,
-    color: "bg-teal-100",
+    color: "bg-teal-100 dark:bg-slate-700",
   },
   {
     title: "TOMADA DE DECISÃO",
@@ -48,7 +48,7 @@ const cards = [
       "Responsabilidade nas escolhas",
     ],
     icon: CheckSquare,
-    color: "bg-cyan-100",
+    color: "bg-cyan-100 dark:bg-slate-700",
   },
   {
     title: "RESOLUÇÃO DE PROBLEMAS",
@@ -57,7 +57,7 @@ const cards = [
       "Criatividade e inovação",
     ],
     icon: Brain,
-    color: "bg-lime-100",
+    color: "bg-lime-100 dark:bg-slate-700",
   },
   {
     title: "TRABALHO EM EQUIPE",
@@ -66,7 +66,7 @@ const cards = [
       "Colaboração e troca de ideias",
     ],
     icon: Users,
-    color: "bg-emerald-100",
+    color: "bg-emerald-100 dark:bg-slate-700",
   },
 ];
 
@@ -110,9 +110,9 @@ export default function Met3() {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="met-3" className="scroll-mt-20 bg-gradient-to-br from-blue-50 to-emerald-50 py-16 px-6 flex flex-col items-center shadow-2xl">
+    <div ref={ref} id="met-3" className="scroll-mt-20 bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 py-16 px-6 flex flex-col items-center shadow-2xl">
       <motion.h2
-        className="text-4xl font-bold text-center mb-12 text-blue-900"
+        className="text-4xl font-bold text-center mb-12 text-blue-900 dark:text-white"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 150 }}
@@ -131,7 +131,7 @@ export default function Met3() {
           return (
             <motion.div
               key={index}
-              className="relative bg-white p-6 rounded-2xl shadow-xl border border-green-100 overflow-visible"
+              className="relative bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-green-100 overflow-visible"
               variants={item}
               whileHover={{ scale: 1.03 }}
             >
@@ -140,10 +140,10 @@ export default function Met3() {
               >
                 <Icon className="text-green-600 w-6 h-6" />
               </div>
-              <h3 className="font-semibold text-lg text-blue-900 mb-2">
+              <h3 className="font-semibold text-lg text-blue-900 dark:text-white mb-2">
                 {card.title}
               </h3>
-              <ul className="list-disc ml-4 text-gray-700 text-sm space-y-1">
+              <ul className="list-disc ml-4 text-gray-700 dark:text-slate-300 text-sm space-y-1">
                 {card.text.map((t, i) => (
                   <li key={i}>{t}</li>
                 ))}

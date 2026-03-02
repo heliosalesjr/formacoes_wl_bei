@@ -100,7 +100,7 @@ const Mat6 = () => {
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
-        className="absolute bottom-4 right-4 z-30 bg-white text-blue-700 hover:bg-slate-100 rounded-full p-3 shadow-xl transition-all"
+        className="absolute bottom-4 right-4 z-30 bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-3 shadow-xl transition-all"
         aria-label={expanded ? 'Voltar' : 'Expandir'}
       >
         {expanded ? <FaArrowLeft className="text-lg" /> : <FaPlus className="text-lg" />}

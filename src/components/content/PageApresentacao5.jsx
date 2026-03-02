@@ -66,12 +66,12 @@ export default function CourseStructure() {
 
   return (
     <section ref={ref} id="apresentacao-4" className="w-full scroll-mt-20">
-      <div className="container max-w-6xl bg-white p-6 rounded-lg shadow-2xl">
-        <h2 className="mb-4 text-4xl text-center font-bold text-slate-600">Módulos</h2>
+      <div className="container max-w-6xl bg-white dark:bg-slate-800 p-6 rounded-lg shadow-2xl">
+        <h2 className="mb-4 text-4xl text-center font-bold text-slate-600 dark:text-white">Módulos</h2>
         <Accordion type="single" collapsible className="w-ful mx-4">
           {modules.map((module, index) => (
             <AccordionItem key={index} value={`module-${index}`} className="text-2xl">
-              <AccordionTrigger>{module.title}</AccordionTrigger>
+              <AccordionTrigger className="dark:text-white">{module.title}</AccordionTrigger>
               <AccordionContent>
                 <ul className="list-disc pl-4 space-y-2">
                   {module.topics.map((topic, i) => (

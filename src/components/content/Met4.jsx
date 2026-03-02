@@ -27,15 +27,15 @@ export default function Met4() {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="met-4" className="scroll-mt-20 bg-gray-100 py-16 px-6 flex justify-center rounded-2xl shadow-2xl">
+    <div ref={ref} id="met-4" className="scroll-mt-20 bg-gray-100 dark:bg-slate-700 py-16 px-6 flex justify-center rounded-2xl shadow-2xl">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
         {/* Coluna Esquerda */}
         <div className="space-y-6 mx-4">
-          <h2 className="text-3xl font-bold text-slate-700">
+          <h2 className="text-3xl font-bold text-slate-700 dark:text-slate-200">
             Como trabalhar os Projetos em Sala de Aula
           </h2>
-          <p className="text-gray-800 text-lg leading-relaxed">
+          <p className="text-gray-800 dark:text-slate-200 text-lg leading-relaxed">
             Existem várias formas de trabalhar por projetos, e na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, sugerimos <strong>projetos de curta duração ao longo das aulas como fator de mobilização para engajar os estudantes</strong>, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function Met4() {
             height={400}
             className="rounded-xl shadow-md"
           />
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 dark:text-slate-300">
             <strong>Sugestão de leitura:</strong><br />
             <em>Aprendizagem baseada em projetos</em>, de William N. Bender
           </p>
