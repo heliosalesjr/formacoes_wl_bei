@@ -22,7 +22,7 @@ export default function HeroBento({
     <section className="w-full px-4 pt-24 pb-4 flex justify-center">
       {/* Outer "floating box" */}
       <div
-        className={`w-full max-w-5xl rounded-3xl bg-[#0f172a] p-3 shadow-2xl transition-all duration-700 ease-out ${
+        className={`w-full max-w-5xl rounded-3xl bg-slate-100 dark:bg-[#0f172a] p-3 shadow-2xl transition-all duration-700 ease-out ${
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
@@ -61,8 +61,8 @@ export default function HeroBento({
           </div>
 
           {/* ── Cell 2: Tag badge ── col 4, row 1 */}
-          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-[#1e293b] p-5 flex flex-col justify-between min-h-[100px]">
-            <span className="text-xs font-semibold tracking-widest uppercase text-slate-400">
+          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] p-5 flex flex-col justify-between min-h-[100px] border border-slate-200 dark:border-transparent">
+            <span className="text-xs font-semibold tracking-widest uppercase text-slate-500 dark:text-slate-400">
               {tagLabel}
             </span>
             <div className="flex items-center gap-2 mt-2">
@@ -71,7 +71,7 @@ export default function HeroBento({
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
               </span>
-              <span className="text-sm text-slate-300 font-medium">Ao vivo</span>
+              <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">Ao vivo</span>
             </div>
           </div>
 
@@ -86,13 +86,13 @@ export default function HeroBento({
           </div>
 
           {/* ── Cell 4: Subtitle ── col 1-2, row 3 */}
-          <div className="md:col-span-2 md:row-span-1 rounded-2xl bg-[#1e293b] p-5 flex flex-col justify-center min-h-[100px]">
+          <div className="md:col-span-2 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] p-5 flex flex-col justify-center min-h-[100px] border border-slate-200 dark:border-transparent">
             {subtitle ? (
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                 {subtitle}
               </p>
             ) : (
-              <p className="text-slate-500 text-sm italic">
+              <p className="text-slate-400 dark:text-slate-500 text-sm italic">
                 Formação de educadores BEĨ
               </p>
             )}
@@ -132,18 +132,18 @@ export default function HeroBento({
           </div>
 
           {/* ── Cell 6: CTA ── col 4, row 3 */}
-          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-[#1e293b] border border-white/10 p-5 flex flex-col items-center justify-center min-h-[100px]">
+          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] border border-slate-200 dark:border-white/10 p-5 flex flex-col items-center justify-center min-h-[100px]">
             {buttonText ? (
               <Link
                 href={buttonHref}
-                className="w-full text-center bg-white text-[#0f172a] font-semibold text-sm rounded-xl px-4 py-3 hover:bg-slate-100 transition-colors duration-200"
+                className="w-full text-center bg-slate-800 dark:bg-white text-white dark:text-[#0f172a] font-semibold text-sm rounded-xl px-4 py-3 hover:bg-slate-700 dark:hover:bg-slate-100 transition-colors duration-200"
               >
                 {buttonText}
               </Link>
             ) : (
               <Link
                 href={buttonHref}
-                className="flex flex-col items-center gap-2 text-slate-400 hover:text-white transition-colors duration-200"
+                className="flex flex-col items-center gap-2 text-slate-400 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
               >
                 <svg
                   className="w-7 h-7 animate-bounce"
