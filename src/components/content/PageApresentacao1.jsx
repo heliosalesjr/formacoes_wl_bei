@@ -38,11 +38,11 @@ const PageApresentacao1 = () => {
           </div>
           
           <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, voltadas aos educadores e educadoras da Secretaria de Educação do Município do Rio de Janeiro que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental.
+            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, voltadas a educadores e educadoras que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental.
           </p>
-          
+
           <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-           Desenvolvido pela equipe pedagógica da BEĨ Educação, em parceria com a equipe de tecnologia da SME, o curso é oferecido no formato autoinstrucional, ou seja,  sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes. Você pode aprender no seu próprio ritmo, de forma prática e acessível.
+            Desenvolvido pela equipe pedagógica da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, o curso é oferecido no formato autoinstrucional, ou seja, sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes. Você pode aprender no seu próprio ritmo, de forma prática e acessível.
           </p>
           
           <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
