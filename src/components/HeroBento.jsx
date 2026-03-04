@@ -80,7 +80,7 @@ export default function HeroBento({
             <span className="text-xs font-semibold tracking-widest uppercase text-emerald-900/70">
               {statLabel || "Total"}
             </span>
-            <span className="text-5xl font-bold text-white leading-none mt-1">
+            <span className="text-4xl font-bold text-white leading-none mt-1">
               {statNumber || "—"}
             </span>
           </div>

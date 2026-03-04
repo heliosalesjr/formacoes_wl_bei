@@ -14,8 +14,8 @@ export default function Diagnostico() {
           title="Encerramento"
           subtitle="Concluir o Módulo 1 e revisar o que aprendemos até aqui"
           tag="Encerramento"
-          statNumber="1"
-          statLabel="Quiz"
+          statNumber="4º e 5º anos"
+          statLabel="Conteúdo"
         />
         <DiagnosticoContentSection />
       </main>

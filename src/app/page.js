@@ -13,8 +13,8 @@ export default function Home() {
         <HeroBento
           title="Formação Material de Educação Financeira"
           tag="Apresentação"
-          statNumber="6"
-          statLabel="Módulos"
+          statNumber="4º e 5º anos"
+          statLabel="Conteúdo"
         />
         <ContentSection />
       </main>

@@ -14,8 +14,8 @@ export default function Metodologias() {
           title="Metodologias Ativas"
           subtitle='Como funciona o programa "Aprendendo a lidar com dinheiro" da BEĨ Educação e a metodologia de aplicação do material'
           tag="Módulo 3"
-          statNumber="6"
-          statLabel="Metodologias"
+          statNumber="4º e 5º anos"
+          statLabel="Conteúdo"
         />
         <MetContentSection />
       </main>

@@ -15,8 +15,8 @@ export default function Modulo1() {
           title="Módulo 1"
           subtitle="O que vamos aprender nesse primeiro módulo"
           tag="Módulo 1"
-          statNumber="5"
-          statLabel="Seções"
+          statNumber="4º e 5º anos"
+          statLabel="Conteúdo"
         />
         <Modulo1ContentSection />
       </main>

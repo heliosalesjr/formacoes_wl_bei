@@ -14,8 +14,8 @@ export default function Modulo4() {
           title="Material Didático"
           subtitle="Conhecendo os livros do estudante e educador, e o início das atividades"
           tag="Módulo 4"
-          statNumber="9"
-          statLabel="Atividades"
+          statNumber="4º e 5º anos"
+          statLabel="Conteúdo"
         />
         <MatContentSection />
       </main>

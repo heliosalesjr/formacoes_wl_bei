@@ -14,8 +14,8 @@ export default function Modulo2() {
           title="Educação Financeira"
           subtitle="O valor da Educação Financeira em sala de aula, e a proposta da BEĨ Educação"
           tag="Módulo 2"
-          statNumber="4"
-          statLabel="Temas"
+          statNumber="4º e 5º anos"
+          statLabel="Conteúdo"
         />
         <EFContentSection />
       </main>
