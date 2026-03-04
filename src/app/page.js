@@ -12,9 +12,10 @@ export default function Home() {
       <main>
         <HeroBento
           title="Formação Material de Educação Financeira"
-          tag="Apresentação"
+          tag="Módulo 1"
           statNumber="4º e 5º anos"
           statLabel="Conteúdo"
+          subtitle="Este é o curso autoinstrucional da BEĨ Educação sobre a aplicação da coleção Aprendendo a Lidar com Dinheiro"
         />
         <ContentSection />
       </main>

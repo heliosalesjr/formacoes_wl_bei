@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroBento({
   title,
@@ -60,19 +61,34 @@ export default function HeroBento({
             </h1>
           </div>
 
-          {/* ── Cell 2: Tag badge ── col 4, row 1 */}
-          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] p-5 flex flex-col justify-between min-h-[100px] border border-slate-200 dark:border-transparent">
-            <span className="text-xs font-semibold tracking-widest uppercase text-slate-500 dark:text-slate-400">
-              {tagLabel}
-            </span>
-            <div className="flex items-center gap-2 mt-2">
-              {/* Pulsing green dot */}
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
-              </span>
-              <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">Ao vivo</span>
-            </div>
+          {/* ── Cell 2: Social links ── col 4, row 1 */}
+          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] p-5 flex items-center justify-center gap-6 min-h-[100px] border border-slate-200 dark:border-transparent">
+            <a href="https://www.instagram.com/beieducacao/" target="_blank" rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors duration-200">
+              <span className="sr-only">Instagram</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://www.beieducacao.com.br" target="_blank" rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors duration-200">
+              <span className="sr-only">Website</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/c/BE%C4%A8Educa%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors duration-200">
+              <span className="sr-only">YouTube</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
           </div>
 
           {/* ── Cell 3: Stat ── col 4, row 2 */}
@@ -98,37 +114,16 @@ export default function HeroBento({
             )}
           </div>
 
-          {/* ── Cell 5: Image mock ── col 3, row 3 */}
+          {/* ── Cell 5: Image ── col 3, row 3 */}
           <div className="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden relative min-h-[100px] bg-gradient-to-br from-violet-700 via-purple-700 to-indigo-800 flex items-center justify-center">
-            {/* Grid pattern */}
-            <div
-              className="absolute inset-0 opacity-20 pointer-events-none"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)",
-                backgroundSize: "20px 20px",
-              }}
-            />
-            {/* Camera icon placeholder */}
-            <svg
-              className="relative z-10 w-10 h-10 text-white/50"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+            <div className="relative w-3/5 h-3/5">
+              <Image
+                src="/trio.png"
+                alt="Trio"
+                fill
+                className="object-contain"
               />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
+            </div>
           </div>
 
           {/* ── Cell 6: CTA ── col 4, row 3 */}
@@ -141,8 +136,11 @@ export default function HeroBento({
                 {buttonText}
               </Link>
             ) : (
-              <Link
-                href={buttonHref}
+              <button
+                onClick={() => {
+                  const target = document.querySelector(buttonHref);
+                  target?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="flex flex-col items-center gap-2 text-slate-400 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
               >
                 <svg
@@ -161,7 +159,7 @@ export default function HeroBento({
                 <span className="text-xs tracking-widest uppercase">
                   Ver conteúdo
                 </span>
-              </Link>
+              </button>
             )}
           </div>
 

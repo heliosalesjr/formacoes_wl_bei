@@ -13,7 +13,7 @@ export default function Diagnostico() {
         <HeroBento
           title="Encerramento"
           subtitle="Concluir o Módulo 1 e revisar o que aprendemos até aqui"
-          tag="Encerramento"
+          tag="Módulo 1"
           statNumber="4º e 5º anos"
           statLabel="Conteúdo"
         />

@@ -77,7 +77,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/logo-blue.png"
+              src={dark ? "/logo_white.png" : "/logo-blue.png"}
               alt="BEĨ Educação"
               width={110}
               height={36}

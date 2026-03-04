@@ -13,7 +13,7 @@ export default function Metodologias() {
         <HeroBento
           title="Metodologias Ativas"
           subtitle='Como funciona o programa "Aprendendo a lidar com dinheiro" da BEĨ Educação e a metodologia de aplicação do material'
-          tag="Módulo 3"
+          tag="Módulo 1"
           statNumber="4º e 5º anos"
           statLabel="Conteúdo"
         />

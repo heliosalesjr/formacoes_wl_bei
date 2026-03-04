@@ -102,7 +102,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-xs text-white">
-            © 2025 BEĨ Educação - Todos os direitos reservados
+            © 2026 BEĨ Educação - Todos os direitos reservados
           </div>
         </div>
       </div>
