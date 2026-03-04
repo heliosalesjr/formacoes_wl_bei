@@ -140,11 +140,11 @@ body {
 html.dark body {
   background: linear-gradient(
     125deg,
-    #064e3b 0%,
-    #0f172a 22%,
-    #0a0f1e 50%,
-    #0c1535 72%,
-    #1e3a8a 100%
+    #0a6648 0%,
+    #243548 22%,
+    #243040 50%,
+    #223260 72%,
+    #2550aa 100%
   );
   background-size: 300% 300%;
   animation: bgShift 10s ease-in-out infinite alternate;
