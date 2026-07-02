@@ -3,6 +3,7 @@ import React from 'react'
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { FaUsersCog, FaBookOpen, FaChalkboardTeacher } from 'react-icons/fa'
+import { titleFont } from '@/lib/fonts'
 
 const Mat5 = () => {
   const ref = useRef();
@@ -30,7 +31,7 @@ const Mat5 = () => {
           
           {/* Título e Parágrafo */}
           <div className="text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200 mb-4">
+            <h2 className={`${titleFont.className} text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200 mb-4`}>
            Diário de Bordo: Procedimentos e ferramentas para o registro das atividades
             </h2>
             <p className="text-slate-700 dark:text-slate-200 text-sm md:text-base max-w-3xl mx-auto">

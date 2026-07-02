@@ -6,6 +6,7 @@ import { useSidebar } from '@/contexts/SidebarContext';
 import Image from 'next/image'
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import { titleFont } from '@/lib/fonts'
 
 const Mat6 = () => {
   const [expanded, setExpanded] = useState(false)
@@ -57,7 +58,7 @@ const Mat6 = () => {
               transition={{ duration: 1 }}
             >
               <div className="max-w-3xl">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Padlet</h2>
+                <h2 className={`${titleFont.className} text-2xl md:text-3xl font-bold mb-4`}>Padlet</h2>
                 <p className="text-sm md:text-base text-slate-100 leading-relaxed">
                   Uma <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">ferramenta útil</span> para esse registro é o <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">PADLET</span>, que funciona como um <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">organizador virtual de tarefas</span>.
                   Ele permite criar e gerenciar murais em diversos formatos, <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">promovendo a curiosidade, a criação e a comunicação</span> entre os estudantes.

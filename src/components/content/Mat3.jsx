@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import { titleFont } from '@/lib/fonts'
 
 const Mat3 = () => {
 
@@ -56,7 +57,7 @@ const Mat3 = () => {
             transition={{ duration: 1 }}
           >
             <div className="max-w-3xl">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              <h2 className={`${titleFont.className} text-2xl md:text-3xl font-bold mb-4`}>
                 Como iniciar a aplicação do programa
               </h2>
               <p className="text-sm md:text-base text-slate-100 leading-relaxed">
@@ -78,7 +79,7 @@ const Mat3 = () => {
             transition={{ duration: 1.2 }}
           >
             <div className="max-w-3xl mx-auto">
-              <h3 className="text-xl md:text-2xl font-bold text-center mb-6 text-green-800 dark:text-white">
+              <h3 className={`${titleFont.className} text-xl md:text-2xl font-bold text-center mb-6 text-green-800 dark:text-white`}>
                 Primeiros Passos
               </h3>
               <ul className="space-y-4 text-base">
