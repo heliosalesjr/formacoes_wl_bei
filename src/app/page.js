@@ -11,7 +11,8 @@ export default function Home() {
       <ProgressBar />
       <main>
         <HeroBento
-          title="Formação Material de Educação Financeira"
+          eyebrow="Curso de Formação"
+          title="Coleção Aprendendo a Lidar com Dinheiro"
           tag="Módulo 1"
           statNumber="4º e 5º anos"
           statLabel="Conteúdo"

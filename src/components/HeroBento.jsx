@@ -2,8 +2,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { titleFont } from "@/lib/fonts";
 
 export default function HeroBento({
+  eyebrow,
   title,
   subtitle,
   tag,
@@ -47,15 +49,21 @@ export default function HeroBento({
 
             {/* Tag above title */}
             {tag && (
-              <span className="relative z-10 inline-block text-xs font-semibold tracking-widest uppercase text-blue-200 bg-white/10 border border-white/20 rounded-full px-3 py-1 w-fit mb-4">
+              <span className="relative z-10 inline-block text-xs font-semibold tracking-widest uppercase text-blue-200 bg-white/10 border border-white/20 rounded-full px-3 py-1 w-fit mb-3">
                 {tag}
+              </span>
+            )}
+
+            {/* Eyebrow */}
+            {eyebrow && (
+              <span className="relative z-10 block text-xs sm:text-sm font-medium uppercase tracking-widest text-blue-200/70 mb-1">
+                {eyebrow}
               </span>
             )}
 
             {/* Title */}
             <h1
-              className="relative z-10 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight uppercase tracking-wide drop-shadow-2xl"
-              style={{ fontFamily: "Rustica, sans-serif" }}
+              className={`${titleFont.className} relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-snug drop-shadow-lg`}
             >
               {title}
             </h1>

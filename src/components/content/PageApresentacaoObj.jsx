@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { useSidebar } from "@/contexts/SidebarContext";
 import { FaBullseye, FaListUl, FaRegLightbulb } from "react-icons/fa";
+import { titleFont } from "@/lib/fonts";
 
 const PageApresentacaoObj = () => {
   const ref = useRef();
@@ -28,7 +29,7 @@ const PageApresentacaoObj = () => {
       <div className="text-center space-y-4">
         <div className="flex items-center justify-center gap-3">
           
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent dark:bg-none dark:text-white">
+          <h1 className={`${titleFont.className} text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent dark:bg-none dark:text-white`}>
             Objetivos da Formação
           </h1>
           
@@ -39,7 +40,7 @@ const PageApresentacaoObj = () => {
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700 p-6 space-y-4">
         <div className="flex items-center gap-3">
           <FaBullseye className="text-green-600 text-2xl" />
-          <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
+          <h2 className={`${titleFont.className} text-2xl font-semibold text-slate-800 dark:text-slate-200`}>
             Objetivo Geral
           </h2>
         </div>
@@ -55,7 +56,7 @@ const PageApresentacaoObj = () => {
       <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/40 dark:to-blue-900/60 rounded-lg border border-green-200 dark:border-green-700 p-6 space-y-6">
         <div className="flex items-center gap-3">
           <FaListUl className="text-blue-600 text-2xl" />
-          <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
+          <h2 className={`${titleFont.className} text-2xl font-semibold text-slate-800 dark:text-slate-200`}>
             Objetivos Específicos
           </h2>
         </div>

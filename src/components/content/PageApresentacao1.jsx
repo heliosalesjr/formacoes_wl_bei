@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import React from 'react'
 import Image from 'next/image'
+import { titleFont } from '@/lib/fonts'
 
 const PageApresentacao1 = () => {
   const ref = useRef();
@@ -27,38 +28,32 @@ const PageApresentacao1 = () => {
 
   return (
     <div ref={ref} id="apresentacao-1" className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 p-8 shadow-2xl border border-slate-100 dark:border-slate-700 space-y-8">
-      <div className="grid gap-8 md:grid-cols-3 items-stretch">
-        {/* Conteúdo - 2/3 da largura */}
-        <div className="md:col-span-2 space-y-6 flex flex-col justify-center">
+      <div className="grid gap-8 md:grid-cols-2 items-stretch">
+        {/* Conteúdo - metade da largura */}
+        <div className="space-y-6 flex flex-col justify-center">
           <div className="flex items-center gap-3">
             <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent dark:bg-none dark:text-white">
+            <h2 className={`${titleFont.className} text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent dark:bg-none dark:text-white`}>
               Apresentação do Curso
             </h2>
           </div>
           
-          <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, voltadas a educadores e educadoras que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental.
-          </p>
-
-          <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-            Desenvolvido pela equipe pedagógica da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, o curso é oferecido no formato autoinstrucional, ou seja, sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes. Você pode aprender no seu próprio ritmo, de forma prática e acessível.
-          </p>
+          
           
           <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-            Aprender sobre educação financeira é uma oportunidade de transformar a forma como ensinamos e vivemos. Quando os professores dominam esse tema, ajudam seus alunos a fazer escolhas mais conscientes e constroem, junto com eles, uma comunidade escolar mais equilibrada, solidária e preparada para o futuro.
+            Este curso sobre a aplicação da Coleção aprendendo a lidar com Dinheiro integra as ações de acompanhamento pedagógico promovidas pela BEĨ Educação, voltadas aos educadores e às educadoras da [rede/escola parceira] que lecionam Matemática para as turmas de [anos/etapas atendidos]. Desenvolvido pela equipe pedagógica da BEĨ Educação em parceria com [a rede parceira], o curso é oferecido no formato autoinstrucional — sem a presença de tutores —, permitindo aprender no seu próprio ritmo, de forma prática e acessível.
           </p>
           
         </div>
         
-        {/* Imagem - 1/3 da largura */}
+        {/* Imagem - metade da largura */}
         <div className="flex items-center justify-center h-full">
-          <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-full min-h-96">
+          <div className="relative overflow-hidden rounded-xl w-full h-full min-h-96 bg-transparent">
             <Image
-              src="/capaz.png"
+              src="/books_4_5.png"
               alt="Imagem ilustrativa"
               fill
-              className="rounded-xl object-cover hover:scale-105 transition-transform duration-300"
+              className="object-contain hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
@@ -68,7 +63,7 @@ const PageApresentacao1 = () => {
       <div className="space-y-6 items-center">
         
          
-          <h3 className="text-3xl font-bold text-slate-700 dark:text-slate-200 justify-center text-center py-8">
+          <h3 className={`${titleFont.className} text-3xl font-bold text-slate-700 dark:text-slate-200 justify-center text-center py-8`}>
             Vídeo de Apresentação
           </h3>
        

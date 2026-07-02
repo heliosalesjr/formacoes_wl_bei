@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { useSidebar } from "@/contexts/SidebarContext";
+import { titleFont } from "@/lib/fonts";
 import {
   Compass,
   Layers,
@@ -66,7 +67,7 @@ export default function PageApresentacao4() {
     >
       <div className="mx-auto max-w-6xl space-y-12">
         {/* Título */}
-        <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:bg-none dark:text-white">
+        <h2 className={`${titleFont.className} text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:bg-none dark:text-white`}>
           Estrutura e Navegação da Formação
         </h2>
 
@@ -82,7 +83,7 @@ export default function PageApresentacao4() {
                 <div className="bg-white dark:bg-slate-800 rounded-full p-4 shadow-inner">
                   <card.icon className={`w-10 h-10 ${card.text}`} />
                 </div>
-                <h3 className="text-2xl font-semibold dark:text-white">{card.title}</h3>
+                <h3 className={`${titleFont.className} text-2xl font-semibold dark:text-white`}>{card.title}</h3>
                 <p className="text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
                   {card.text}
                 </p>
@@ -101,7 +102,7 @@ export default function PageApresentacao4() {
                   <div className="bg-white dark:bg-slate-800 rounded-full p-4 shadow-inner">
                     <card.icon className={`w-10 h-10 ${card.text}`} />
                   </div>
-                  <h3 className="text-2xl font-semibold dark:text-white">{card.title}</h3>
+                  <h3 className={`${titleFont.className} text-2xl font-semibold dark:text-white`}>{card.title}</h3>
                   <p className="text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
                     {card.text}
                   </p>
