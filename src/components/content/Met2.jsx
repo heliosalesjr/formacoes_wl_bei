@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import { titleFont } from '@/lib/fonts'
 
 const Met2 = () => {
   const [expanded, setExpanded] = useState(false)
@@ -67,7 +68,7 @@ const Met2 = () => {
               transition={{ duration: 1 }}
             >
               <div className="max-w-3xl">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                <h2 className={`${titleFont.className} text-2xl md:text-3xl font-bold mb-4`}>
                   Aprendizagem Baseada em Projetos
                 </h2>
                 <p className="text-sm md:text-base text-slate-100 leading-relaxed">

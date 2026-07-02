@@ -1,15 +1,15 @@
 'use client'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
-import React from 'react'
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import { titleFont } from '@/lib/fonts'
 
-const Met5 = () => {
+const Met5b = () => {
   const [expanded, setExpanded] = useState(false)
-  
   const ref = useRef();
   const { markAsViewed } = useSidebar();
 
@@ -17,7 +17,7 @@ const Met5 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          markAsViewed('met-5');
+          markAsViewed('met-5b');
         }
       },
       { threshold: 0.5 }
@@ -32,11 +32,11 @@ const Met5 = () => {
 
   return (
     <motion.div
-      ref={ref} 
-      id="met-5"
+      ref={ref} id="met-5b"
       layout
       className="scroll-mt-20 relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl bg-white dark:bg-slate-800"
       transition={{ duration: 1.2 }}
+
     >
       {/* Imagem e camada escura */}
       <AnimatePresence>
@@ -50,7 +50,7 @@ const Met5 = () => {
               transition={{ duration: 1 }}
             >
               <Image
-                src="/game.jpg"
+                src="/handsz.jpg"
                 alt="Fator de Mobilização"
                 fill
                 className="object-cover object-center"
@@ -68,10 +68,12 @@ const Met5 = () => {
             >
               <div className="max-w-3xl">
                 <h2 className={`${titleFont.className} text-2xl md:text-3xl font-bold mb-4`}>
-                  Atividades de Projeto
+                  Fator de Mobilização
                 </h2>
                 <p className="text-sm md:text-base text-slate-100">
-                  Em algumas aulas do livro, temos uma sessão "Agora é sua vez!", em que apresentamos atividades de projeto para desenvolver com os estudantes. Elas costumam ser encadeadas com as demais atividades de projeto, ajudando a colocar as crianças em situações práticas que vão construir conhecimentos mais amplos e trabalhar em equipe.
+                  Refere-se ao que desafia, motiva e desperta o interesse da turma a partir do conteúdo trabalhado naquela seção, que vai definir o escopo dos projetos.
+                  Esse desafio pode ser, por exemplo, algo a ser construído, uma habilidade a ser desenvolvida, uma apresentação a ser organizada ou um evento a ser planejado e organizado pelos estudantes.
+                  É aquilo que a turma pode colocar em prática a partir do conhecimento teórico adquirido.
                 </p>
               </div>
             </motion.div>
@@ -79,47 +81,46 @@ const Met5 = () => {
         )}
       </AnimatePresence>
 
-      {/* PDF no iframe */}
+      {/* Texto alternativo com fundo azul */}
       <AnimatePresence>
-        {expanded && (
-          <motion.div
-            className="absolute inset-0 z-20"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+      {expanded && (
+        <motion.div
+            className="absolute inset-0 z-20 flex flex-col items-center justify-center px-6 text-center text-white bg-emerald-500 overflow-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
-          >
-            <iframe
-              src="/pagina_97.pdf#navpanes=0&toolbar=1"
-              className="w-full h-full"
-              title="Página 97 - Caderno do Educador"
-            />
-          </motion.div>
+        >
+            <div className="max-w-3xl">
+            <p className="text-base md:text-lg font-medium text-white mb-6">
+                A ideia é que ao final de cada parte do livro do estudante, seja proposto um Pequeno Projeto (PPDA). As orientações de como dinamizar estas atividades estão no Caderno do Educador.
+            </p>
+            <div className="w-full flex justify-center">
+                <Image
+                src="/exemplo.png"
+                alt="Exemplo de projeto"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-lg"
+                />
+            </div>
+            </div>
+        </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Botão flutuante */}
+      {/* Botão flutuante com efeito bounce */}
       <motion.button
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
-        className="absolute bottom-4 right-4 z-30 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-slate-600 rounded-full px-5 py-3 shadow-xl transition-all flex items-center gap-2"
-        aria-label={expanded ? 'Voltar' : 'Ver PDF'}
+        className="absolute bottom-4 right-4 z-30 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-slate-600 rounded-full p-3 shadow-xl transition-all"
+        aria-label={expanded ? 'Voltar' : 'Expandir'}
       >
-        {expanded ? (
-          <>
-            <FaArrowLeft className="text-lg" />
-            <span className="text-sm font-medium">Voltar</span>
-          </>
-        ) : (
-          <>
-            <FaPlus className="text-lg" />
-            <span className="text-sm font-medium">Acesse a página do material didático que mostra um exemplo</span>
-          </>
-        )}
+        {expanded ? <FaArrowLeft className="text-lg" /> : <FaPlus className="text-lg" />}
       </motion.button>
     </motion.div>
   )
 }
 
-export default Met5
+export default Met5b

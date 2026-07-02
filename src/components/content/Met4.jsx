@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 
 import Image from "next/image";
+import { titleFont } from "@/lib/fonts";
 
 export default function Met4() {
 
@@ -32,7 +33,7 @@ export default function Met4() {
 
         {/* Coluna Esquerda */}
         <div className="space-y-6 mx-4">
-          <h2 className="text-3xl font-bold text-slate-700 dark:text-slate-200">
+          <h2 className={`${titleFont.className} text-3xl font-bold text-slate-700 dark:text-slate-200`}>
             Como trabalhar os Projetos em Sala de Aula
           </h2>
           <p className="text-gray-800 dark:text-slate-200 text-lg leading-relaxed">

@@ -4,6 +4,7 @@ import { useSidebar } from '@/contexts/SidebarContext';
 
 import React from 'react'
 import { FaCheckCircle, FaProjectDiagram, FaSyncAlt, FaGamepad, FaChalkboardTeacher } from 'react-icons/fa'
+import { titleFont } from '@/lib/fonts'
 
 
 const Met1 = () => {
@@ -32,7 +33,7 @@ const Met1 = () => {
   return (
     <div ref={ref} id="met-1" className="scroll-mt-20 bg-gradient-to-b from-white to-blue-500/80 dark:from-slate-900 dark:to-blue-900 py-10 px-4 md:px-16 relative overflow-hidden rounded-2xl shadow-2xl">
       {/* Título */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-slate-700 dark:text-slate-200">
+      <h2 className={`${titleFont.className} text-3xl md:text-4xl font-bold text-center mb-6 text-slate-700 dark:text-slate-200`}>
         Metodologias Ativas
       </h2>
       <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-200 my-8">
@@ -60,7 +61,7 @@ const Met1 = () => {
 
           <FaProjectDiagram className="text-yellow-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Aprendizagem Baseada em Projetos (ABP)</h3>
+            <h3 className={`${titleFont.className} text-lg font-bold text-slate-800 dark:text-slate-200`}>Aprendizagem Baseada em Projetos (ABP)</h3>
             <p className="text-slate-600 dark:text-slate-300 text-sm">
               Os alunos aprendem ao desenvolver projetos aplicáveis no mundo real.
             </p>
@@ -70,7 +71,7 @@ const Met1 = () => {
         <div className="bg-white dark:bg-slate-800 border-l-8 border-pink-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
           <FaSyncAlt className="text-pink-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Rotação por Estações</h3>
+            <h3 className={`${titleFont.className} text-lg font-bold text-slate-800 dark:text-slate-200`}>Rotação por Estações</h3>
             <p className="text-slate-600 dark:text-slate-300 text-sm">
               Os alunos circulam por diferentes atividades e recursos, por estações, em uma mesma aula.
             </p>
@@ -80,7 +81,7 @@ const Met1 = () => {
         <div className="bg-white dark:bg-slate-800 border-l-8 border-orange-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
           <FaGamepad className="text-orange-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Gamificação</h3>
+            <h3 className={`${titleFont.className} text-lg font-bold text-slate-800 dark:text-slate-200`}>Gamificação</h3>
             <p className="text-slate-600 dark:text-slate-300 text-sm">
               Uso de elementos de jogos, como desafios e recompensas, para estimular a participação e o engajamento.
             </p>
@@ -90,7 +91,7 @@ const Met1 = () => {
         <div className="bg-white dark:bg-slate-800 border-l-8 border-blue-400 rounded-lg shadow p-5 flex items-start gap-4 transform transition duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl">
           <FaChalkboardTeacher className="text-blue-400 text-3xl mt-1" />
           <div>
-            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">Sala de Aula Invertida</h3>
+            <h3 className={`${titleFont.className} text-lg font-bold text-slate-800 dark:text-slate-200`}>Sala de Aula Invertida</h3>
             <p className="text-slate-600 dark:text-slate-300 text-sm">
               O estudante acessa conteúdos antes da aula e utiliza o tempo em sala para discussões e práticas.
             </p>

@@ -12,6 +12,7 @@ import {
   Brain,
   BookOpenCheck,
 } from "lucide-react";
+import { titleFont } from "@/lib/fonts";
 
 const cards = [
   {
@@ -112,7 +113,7 @@ export default function Met3() {
   return (
     <div ref={ref} id="met-3" className="scroll-mt-20 bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 py-16 px-6 flex flex-col items-center shadow-2xl">
       <motion.h2
-        className="text-4xl font-bold text-center mb-12 text-blue-900 dark:text-white"
+        className={`${titleFont.className} text-4xl font-bold text-center mb-12 text-blue-900 dark:text-white`}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 150 }}
@@ -140,7 +141,7 @@ export default function Met3() {
               >
                 <Icon className="text-green-600 w-6 h-6" />
               </div>
-              <h3 className="font-semibold text-lg text-blue-900 dark:text-white mb-2">
+              <h3 className={`${titleFont.className} font-semibold text-lg text-blue-900 dark:text-white mb-2`}>
                 {card.title}
               </h3>
               <ul className="list-disc ml-4 text-gray-700 dark:text-slate-300 text-sm space-y-1">

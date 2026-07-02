@@ -41,7 +41,8 @@ const navigation = {
       { id: 'met-2', title: 'Aprendizagem Baseada em Projetos' },
       { id: 'met-3', title: 'ABP - Resumo' },
       { id: 'met-4', title: 'Pequenos Projetos Didáticos Ativos' },
-      { id: 'met-5', title: 'Fator de Mobilização' },
+      { id: 'met-5', title: 'Atividades de Projeto' },
+      { id: 'met-5b', title: 'Fator de Mobilização' },
       { id: 'met-6', title: 'Mais sobre mobilização' },
     ]
   },
