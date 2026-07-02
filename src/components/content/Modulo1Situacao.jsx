@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import { titleFont } from '@/lib/fonts'
 
 const Modulo1Situacao = () => {
 
@@ -68,7 +69,7 @@ const Modulo1Situacao = () => {
               transition={{ duration: 1 }}
             >
               <div className="max-w-3xl">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                <h2 className={`${titleFont.className} text-2xl md:text-3xl font-bold mb-4`}>
                 A situação e a importância da educação financeira na sala de aula
                 </h2>
                 

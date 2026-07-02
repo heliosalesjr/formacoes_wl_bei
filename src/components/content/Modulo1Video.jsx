@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import Link from 'next/link'
 import { FaLink } from 'react-icons/fa'
+import { titleFont } from '@/lib/fonts'
 
 
 const Modulo1Video = () => {
@@ -33,7 +34,7 @@ const Modulo1Video = () => {
     <div ref={ref} id="modulo-1-video" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-lg shadow-2xl p-6 md:p-10 space-y-8 text-center">
       {/* Título */}
       <div className="flex items-center justify-center gap-3 mb-8">
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-600 dark:text-white py-4">
+          <h2 className={`${titleFont.className} text-2xl md:text-4xl font-bold text-slate-600 dark:text-white py-4`}>
             A Situação Financeira dos Brasileiros
           </h2>
          </div>
@@ -50,7 +51,7 @@ const Modulo1Video = () => {
       </div>
 
       {/* Subtítulo */}
-      <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200">Saiba mais no "<Link className="text-blue-800 dark:text-blue-300 underline" href="https://porque.com.br/">Por Quê?</Link>", portal de Economia ligado à BEĨ Educação</h3>
+      <h3 className={`${titleFont.className} text-xl font-semibold text-slate-800 dark:text-slate-200`}>Saiba mais no "<Link className="text-blue-800 dark:text-blue-300 underline" href="https://porque.com.br/">Por Quê?</Link>", portal de Economia ligado à BEĨ Educação</h3>
 
       {/* Cards com links */}
       <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 text-left">
@@ -64,7 +65,7 @@ const Modulo1Video = () => {
           <div className="flex items-center gap-4">
             <FaLink className="text-blue-600 text-2xl" />
             <div>
-              <h4 className="text-lg font-bold text-slate-900 dark:text-white">Riscos do Endividamento Excessivo</h4>
+              <h4 className={`${titleFont.className} text-lg font-bold text-slate-900 dark:text-white`}>Riscos do Endividamento Excessivo</h4>
               <p className="text-slate-600 dark:text-slate-300 text-sm">Descubra como o descontrole financeiro pode levar ao endividamento crítico e entenda os impactos sociais e pessoais dessa situação.</p>
             </div>
           </div>
@@ -80,7 +81,7 @@ const Modulo1Video = () => {
           <div className="flex items-center gap-4">
             <FaLink className="text-green-600 text-2xl" />
             <div>
-              <h4 className="text-lg font-bold text-slate-900 dark:text-white">Realidade do Endividamento nas Periferias</h4>
+              <h4 className={`${titleFont.className} text-lg font-bold text-slate-900 dark:text-white`}>Realidade do Endividamento nas Periferias</h4>
               <p className="text-slate-600 dark:text-slate-300 text-sm">Uma análise sensível e crítica sobre como a desigualdade econômica influencia o endividamento nas regiões periféricas.</p>
             </div>
           </div>
