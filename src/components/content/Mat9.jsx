@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useSidebar } from '@/contexts/SidebarContext';
 import confetti from 'canvas-confetti'
+import { titleFont } from '@/lib/fonts'
 
 const checklistItems = [
   'Entendi por que é importante trabalhar a educação financeira em sala de aula.',
@@ -53,7 +54,7 @@ const Mat9 = () => {
 
   return (
     <div ref={ref} id="what" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto space-y-6">
-      <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">
+      <h2 className={`${titleFont.className} text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4`}>
         NESSE MÓDULO EU:
       </h2>
       <ul className="space-y-4">

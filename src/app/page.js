@@ -14,8 +14,6 @@ export default function Home() {
           eyebrow="Curso de Formação"
           title="Coleção Aprendendo a Lidar com Dinheiro"
           tag="Módulo 1"
-          statNumber="4º e 5º anos"
-          statLabel="Conteúdo"
           subtitle="Este é o curso autoinstrucional da BEĨ Educação sobre a aplicação da coleção Aprendendo a Lidar com Dinheiro"
         />
         <ContentSection />

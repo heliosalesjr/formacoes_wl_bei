@@ -210,3 +210,48 @@ html.dark body {
   background-size: 400% 400%;
   animation: movingGradient 17s ease infinite;
 }
+
+@keyframes floatSlowA {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-14px, 16px) scale(1.08); }
+}
+
+@keyframes floatSlowB {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(12px, -14px) scale(0.94); }
+}
+
+@keyframes driftGrid {
+  0% { background-position: 0px 0px; }
+  100% { background-position: 48px 48px; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.12; transform: scale(1); }
+  50% { opacity: 0.22; transform: scale(1.1); }
+}
+
+.animate-float-slow-a {
+  animation: floatSlowA 14s ease-in-out infinite;
+}
+
+.animate-float-slow-b {
+  animation: floatSlowB 18s ease-in-out infinite;
+}
+
+.animate-drift-grid {
+  animation: driftGrid 40s linear infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow-a,
+  .animate-float-slow-b,
+  .animate-drift-grid,
+  .animate-glow-pulse {
+    animation: none;
+  }
+}

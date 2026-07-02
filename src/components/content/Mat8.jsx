@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState  } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import { titleFont } from '@/lib/fonts'
 
 const Mat8 = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +29,7 @@ const Mat8 = () => {
   return (
     <div ref={ref} id="mat-8" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-lg shadow-2xl p-6 md:p-10 space-y-8 text-center">
       {/* Título */}
-      <h2 className="text-2xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">
+      <h2 className={`${titleFont.className} text-2xl md:text-4xl font-bold text-slate-700 dark:text-slate-200`}>
         Encerrando o Módulo 1
       </h2>
 

@@ -10,8 +10,6 @@ export default function HeroBento({
   subtitle,
   tag,
   tagLabel = "BEĨ Educação",
-  statNumber,
-  statLabel,
   buttonText,
   buttonHref = "#content",
 }) {
@@ -30,16 +28,18 @@ export default function HeroBento({
         }`}
       >
         {/* Bento grid: 4 cols × 3 rows on desktop, single col on mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 md:h-[500px] gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
 
           {/* ── Cell 1: Title ── col 1-3, row 1-2 */}
           <div className="relative md:col-span-3 md:row-span-2 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 p-7 flex flex-col justify-between min-h-[200px]">
             {/* Decorative circles */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/5 pointer-events-none" />
-            <div className="absolute bottom-4 left-4 w-24 h-24 rounded-full bg-white/5 pointer-events-none" />
+            <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/5 pointer-events-none animate-float-slow-a" />
+            <div className="absolute bottom-4 left-4 w-24 h-24 rounded-full bg-white/5 pointer-events-none animate-float-slow-b" />
+            {/* Soft glow blob */}
+            <div className="absolute top-1/3 left-1/2 w-56 h-56 -translate-x-1/2 rounded-full bg-blue-300 blur-3xl pointer-events-none animate-glow-pulse" />
             {/* Dot grid ornament */}
             <div
-              className="absolute inset-0 opacity-10 pointer-events-none"
+              className="absolute inset-0 opacity-10 pointer-events-none animate-drift-grid"
               style={{
                 backgroundImage:
                   "radial-gradient(circle, white 1px, transparent 1px)",
@@ -70,7 +70,7 @@ export default function HeroBento({
           </div>
 
           {/* ── Cell 2: Social links ── col 4, row 1 */}
-          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] p-5 flex items-center justify-center gap-6 min-h-[100px] border border-slate-200 dark:border-transparent">
+          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-white dark:bg-[#1e293b] p-3 flex items-center justify-center gap-5 min-h-[64px] border border-slate-200 dark:border-transparent">
             <a href="https://www.instagram.com/beieducacao/" target="_blank" rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors duration-200">
               <span className="sr-only">Instagram</span>
@@ -99,14 +99,16 @@ export default function HeroBento({
             </a>
           </div>
 
-          {/* ── Cell 3: Stat ── col 4, row 2 */}
-          <div className="md:col-span-1 md:row-span-1 rounded-2xl bg-emerald-500 p-5 flex flex-col justify-between min-h-[100px]">
-            <span className="text-xs font-semibold tracking-widest uppercase text-emerald-900/70">
-              {statLabel || "Total"}
-            </span>
-            <span className="text-4xl font-bold text-white leading-none mt-1">
-              {statNumber || "—"}
-            </span>
+          {/* ── Cell 3: Stat ── col 4, row 2 (hidden on mobile) */}
+          <div className="hidden md:block relative md:col-span-1 md:row-span-1 aspect-square rounded-2xl bg-emerald-500 overflow-hidden">
+            <div className="absolute inset-[10%]">
+              <Image
+                src="/ald.png"
+                alt=""
+                fill
+                className="object-cover mix-blend-screen"
+              />
+            </div>
           </div>
 
           {/* ── Cell 4: Subtitle ── col 1-2, row 3 */}

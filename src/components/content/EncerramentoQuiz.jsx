@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { useSidebar } from "@/contexts/SidebarContext";
+import { titleFont } from "@/lib/fonts";
 
 const perguntas = [
   {
@@ -255,7 +256,7 @@ export default function EncerramentoQuiz() {
         className="flex items-center justify-center gap-3 mb-8"
       >
         <div className="scroll-mt-20 mt-8 bg-white dark:bg-slate-800 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:bg-none dark:text-white pb-8 p-4">
+          <h2 className={`${titleFont.className} text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:bg-none dark:text-white pb-8 p-4`}>
             Quiz do Módulo 1
           </h2>
 
@@ -319,7 +320,7 @@ export default function EncerramentoQuiz() {
       <AlertDialog open={feedback.open}>
         <AlertDialogContent className="max-w-md">
           <AlertDialogHeader>
-            <AlertDialogTitle>
+            <AlertDialogTitle className={titleFont.className}>
               {feedback.correta ? "✅ Resposta correta!" : "❌ Resposta incorreta"}
             </AlertDialogTitle>
             <AlertDialogDescription className="text-slate-600 dark:text-slate-300 mt-2">
