@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { FaCalculator, FaPiggyBank } from 'react-icons/fa';
+import { titleFont } from '@/lib/fonts';
 
 const EF3 = () => {
   const ref = useRef();
@@ -65,7 +66,7 @@ const EF3 = () => {
       className="scroll-mt-20 bg-white dark:bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl overflow-x-auto"
     >
       <div className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200 mb-2 py-4">
+        <h1 className={`${titleFont.className} text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200 mb-2 py-4`}>
           Diferenças entre Matemática Financeira e Educação Financeira
         </h1>
         <p className="text-slate-600 dark:text-slate-300 text-base md:text-lg max-w-2xl mx-auto">
@@ -78,12 +79,12 @@ const EF3 = () => {
         {/* Títulos com ícones */}
         <div className="bg-orange-100 dark:bg-orange-900/30 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-pink-400 text-center">
           <FaPiggyBank className="text-pink-500 text-3xl" />
-          <h2 className="text-xl font-bold text-orange-800 dark:text-white">Educação Financeira</h2>
+          <h2 className={`${titleFont.className} text-xl font-bold text-orange-800 dark:text-white`}>Educação Financeira</h2>
         </div>
 
         <div className="bg-blue-100 dark:bg-blue-900/30 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-blue-400 text-center">
           <FaCalculator className="text-yellow-500 text-3xl" />
-          <h2 className="text-xl font-bold text-blue-800 dark:text-white">Matemática Financeira</h2>
+          <h2 className={`${titleFont.className} text-xl font-bold text-blue-800 dark:text-white`}>Matemática Financeira</h2>
         </div>
 
         {/* Linhas de conteúdo */}
