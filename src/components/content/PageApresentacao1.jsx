@@ -57,7 +57,7 @@ const PageApresentacao1 = () => {
                 <img
                   src={img}
                   alt={`Slide ${idx + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </SwiperSlide>
             ))}
