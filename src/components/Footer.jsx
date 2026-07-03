@@ -9,9 +9,11 @@ export default function Footer() {
           {/* Logo e tagline */}
           <div className="text-center">
             <div className="mb-3">
-              <img
+              <Image
                 src="/logo_white.png"
                 alt="BEĨ Educação"
+                width={1951}
+                height={1548}
                 className="h-[150px] w-auto mx-auto pb-8"
               />
             </div>

@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import React from 'react'
+import Image from 'next/image'
 import { titleFont } from '@/lib/fonts'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
@@ -53,11 +54,13 @@ const PageApresentacao1 = () => {
             className="w-full h-full"
           >
             {images.map((img, idx) => (
-              <SwiperSlide key={idx}>
-                <img
-                  src={img}
+              <SwiperSlide key={idx} className="relative">
+                <Image
+                  src={`/${img}`}
                   alt={`Slide ${idx + 1}`}
-                  className="w-full h-full object-cover object-center"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover object-center"
                 />
               </SwiperSlide>
             ))}

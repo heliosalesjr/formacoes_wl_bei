@@ -3,6 +3,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 
@@ -51,11 +52,13 @@ const EFIntro = () => {
         className="w-full h-full"
       >
         {images.map((img, idx) => (
-          <SwiperSlide key={idx}>
-            <img
-              src={img}
+          <SwiperSlide key={idx} className="relative">
+            <Image
+              src={`/${img}`}
               alt={`Slide ${idx + 1}`}
-              className="w-full h-full object-cover"
+              fill
+              sizes="100vw"
+              className="object-cover"
             />
           </SwiperSlide>
         ))}
