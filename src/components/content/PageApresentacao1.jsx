@@ -2,8 +2,14 @@
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import React from 'react'
-import Image from 'next/image'
 import { titleFont } from '@/lib/fonts'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/autoplay'
+
+const images = ['em.png', 'ef1.png', 'ef2.png']
 
 const PageApresentacao1 = () => {
   const ref = useRef();
@@ -28,34 +34,34 @@ const PageApresentacao1 = () => {
 
   return (
     <div ref={ref} id="apresentacao-1" className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 p-8 shadow-2xl border border-slate-100 dark:border-slate-700 space-y-8">
-      <div className="grid gap-8 md:grid-cols-2 items-stretch">
-        {/* Conteúdo - metade da largura */}
-        <div className="space-y-6 flex flex-col justify-center">
-          <div className="flex items-center gap-3">
-            <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
-            <h2 className={`${titleFont.className} text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent dark:bg-none dark:text-white`}>
-              Apresentação do Curso
-            </h2>
-          </div>
-          
-          
-          
-          <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção aprendendo a lidar com Dinheiro integra as ações de acompanhamento pedagógico promovidas pela BEĨ Educação, voltadas aos educadores e às educadoras da [rede/escola parceira] que lecionam Matemática para as turmas de [anos/etapas atendidos]. Desenvolvido pela equipe pedagógica da BEĨ Educação em parceria com [a rede parceira], o curso é oferecido no formato autoinstrucional — sem a presença de tutores —, permitindo aprender no seu próprio ritmo, de forma prática e acessível.
-          </p>
-          
-        </div>
-        
-        {/* Imagem - metade da largura */}
-        <div className="flex items-center justify-center h-full">
-          <div className="relative overflow-hidden rounded-xl w-full h-full min-h-96 bg-transparent">
-            <Image
-              src="/books_4_5.png"
-              alt="Imagem ilustrativa"
-              fill
-              className="object-contain hover:scale-105 transition-transform duration-300"
-            />
-          </div>
+      <div className="space-y-6 w-full">
+        <h2 className={`${titleFont.className} text-4xl font-bold text-center bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent dark:bg-none dark:text-white`}>
+          Apresentação do Curso
+        </h2>
+
+        <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
+          Este curso sobre a aplicação da Coleção aprendendo a lidar com Dinheiro integra as ações de acompanhamento pedagógico promovidas pela BEĨ Educação, voltadas aos educadores e às educadoras da <strong>[rede/escola parceira]</strong> que lecionam Matemática para as turmas de <strong>[anos/etapas atendidos]</strong>. Desenvolvido pela equipe pedagógica da BEĨ Educação em parceria com <strong>[a rede parceira]</strong>, o curso é oferecido no formato autoinstrucional — sem a presença de tutores —, permitindo aprender no seu próprio ritmo, de forma prática e acessível.
+        </p>
+
+        {/* Carrossel de imagens */}
+        <div className="relative w-full h-[50vh] overflow-hidden rounded-xl shadow-lg">
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop={true}
+            slidesPerView={1}
+            className="w-full h-full"
+          >
+            {images.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img
+                  src={img}
+                  alt={`Slide ${idx + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 

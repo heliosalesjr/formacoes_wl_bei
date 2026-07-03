@@ -213,12 +213,12 @@ html.dark body {
 
 @keyframes floatSlowA {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-14px, 16px) scale(1.08); }
+  50% { transform: translate(-20px, 24px) scale(1.14); }
 }
 
 @keyframes floatSlowB {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(12px, -14px) scale(0.94); }
+  50% { transform: translate(18px, -20px) scale(0.88); }
 }
 
 @keyframes driftGrid {
@@ -227,8 +227,8 @@ html.dark body {
 }
 
 @keyframes glowPulse {
-  0%, 100% { opacity: 0.12; transform: scale(1); }
-  50% { opacity: 0.22; transform: scale(1.1); }
+  0%, 100% { opacity: 0.18; transform: scale(1); }
+  50% { opacity: 0.36; transform: scale(1.18); }
 }
 
 .animate-float-slow-a {
