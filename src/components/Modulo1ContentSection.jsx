@@ -43,7 +43,7 @@ export default function Modulo1ContentSection() {
                 
                 
                 <div className="flex justify-center mt-8">
-                    <Button asChild className={"bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"}>
+                    <Button asChild size="lg">
                     <Link href="/educacaofinanceira">Próxima Página: Educação Financeira</Link>
                     </Button>
                 </div>

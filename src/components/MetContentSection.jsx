@@ -50,7 +50,7 @@ const MetContentSection = () => {
           
           {/* Next Page Button */}
           <div className="flex justify-center mt-8">
-            <Button asChild>
+            <Button asChild size="lg">
               <Link href="/material">Próxima Página: Material Didático</Link>
             </Button>
           </div>

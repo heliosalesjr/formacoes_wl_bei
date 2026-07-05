@@ -35,7 +35,7 @@ export default function EFContentSection() {
      
             
             <div className="flex justify-center mt-8">
-              <Button asChild>
+              <Button asChild size="lg">
                 <Link href="/metodologias">Próxima Página: Metodologias</Link>
               </Button>
             </div>
