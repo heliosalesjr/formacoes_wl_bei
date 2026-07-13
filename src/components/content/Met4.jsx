@@ -37,7 +37,7 @@ export default function Met4() {
             Como trabalhar os Projetos em Sala de Aula
           </h2>
           <p className="text-gray-800 dark:text-slate-200 text-lg leading-relaxed">
-            Existem várias formas de trabalhar por projetos, e na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, sugerimos <strong>projetos de curta duração ao longo das aulas como fator de mobilização para engajar os estudantes</strong>, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.
+            Existem várias formas de trabalhar por projetos, e na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, sugerimos <strong>projetos ao longo das aulas como fator de mobilização para engajar os estudantes</strong>, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.
           </p>
         </div>
 
