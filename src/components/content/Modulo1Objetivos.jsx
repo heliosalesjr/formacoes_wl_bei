@@ -10,22 +10,22 @@ const objetivos = [
   {
     icon: <FaChalkboardTeacher size={32} className="text-blue-600" />,
     title: 'Educação Financeira',
-    description: 'Entender por que é importante trabalhar a educação financeira em sala de aula.'
+    description: 'Entenda por que é importante trabalhar a educação financeira em sala de aula.'
   },
   {
     icon: <FaBookOpen size={32} className="text-red-500" />,
     title: 'Conhecer a Coleção',
-    description: 'Conhecer a coleção Aprendendo a Lidar com Dinheiro.'
+    description: 'Conheça a coleção Aprendendo a Lidar com Dinheiro.'
   },
   {
     icon: <FaUsers size={32} className="text-green-500" />,
     title: 'Diagnóstico de Turma: Perfil e Conhecimentos Prévios',
-    description: 'Aprender a fazer o diagnóstico do perfil da turma.'
+    description: 'Aprenda a fazer o diagnóstico do perfil da turma.'
   },
   {
     icon: <FaTools size={32} className="text-yellow-400" />,
     title: 'Ferramentas de Engajamento',
-    description: 'Conhecer ferramentas e atividades para o engajamento dos estudantes.'
+    description: 'Conheça ferramentas e atividades para o engajamento dos estudantes.'
   }
 ]
 

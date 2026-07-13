@@ -21,7 +21,8 @@ const navigation = {
       { id: 'modulo-1-objetivos', title: 'Objetivos do Módulo' },
       { id: 'modulo-1-situacao', title: 'Situação e Importância' },
       { id: 'modulo-1-midia',    title: 'Educação Financeira na Mídia' },
-      { id: 'modulo-1-video',    title: 'A situação financeira dos Brasileiros' },
+      { id: 'modulo-1-pq',       title: 'Por Quê' },
+      { id: 'ao-final',          title: 'Ao Final do Módulo' },
     ]
   },
   'Educação Financeira': {

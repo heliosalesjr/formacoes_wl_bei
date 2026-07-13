@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useSidebar } from "@/contexts/SidebarContext";
-import { ExternalLink, TrendingDown, HeartPulse, Building2, GraduationCap, X } from "lucide-react";
+import { ExternalLink, TrendingDown, HeartPulse, Building2, GraduationCap, Video, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { titleFont } from "@/lib/fonts";
 
@@ -55,7 +55,7 @@ export default function Modulo1Midia() {
           markAsViewed("modulo-1-midia");
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0 }
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -188,7 +188,23 @@ export default function Modulo1Midia() {
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mb-4">
             Promover a saúde financeira é, portanto, investir em bem-estar, autonomia e cidadania. Ao compreender que finanças conscientes e equilíbrio emocional caminham juntos, formamos não apenas cidadãos mais competentes, mas também comunidades mais saudáveis, resilientes e solidárias  pilares essenciais para um país mais equilibrado e próspero.
           </p>
-          
+
+        </section>
+
+        {/* Bloco 5 – Vídeo */}
+        <section className="bg-white/80 dark:bg-slate-800/80 p-8 rounded-xl shadow-md border-l-4 border-l-purple-500 hover:shadow-lg transition-all duration-300">
+          <div className="flex items-center gap-3 mb-4">
+            <Video className="h-7 w-7 text-purple-600" />
+            <h3 className={`${titleFont.className} text-2xl font-semibold text-slate-800 dark:text-slate-200`}>A Situação Financeira dos Brasileiros</h3>
+          </div>
+          <div className="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/srOQ8l_ps0o"
+              title="YouTube video player"
+              allowFullScreen
+            ></iframe>
+          </div>
         </section>
       </div>
 

@@ -2,7 +2,7 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 import Modulo1Intro from "./content/Modulo1Intro"
 import Modulo1Objetivos from "./content/Modulo1Objetivos"
 import Modulo1Situacao from "./content/Modulo1Situacao"
-import Modulo1Video from "./content/Modulo1Video"
+import Modulo1PQ from "./content/Modulo1PQ"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 //import Modulo1Midia from "./content/Modulo1Midia"
@@ -33,7 +33,7 @@ export default function Modulo1ContentSection() {
                 </FadeInWhenVisible>
 
                 <FadeInWhenVisible>
-                  <Modulo1Video />
+                  <Modulo1PQ />
                 </FadeInWhenVisible>
                 
                 <FadeInWhenVisible>
