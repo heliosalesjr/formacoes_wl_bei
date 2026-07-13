@@ -41,7 +41,7 @@ const PageApresentacao1 = () => {
         </h2>
 
         <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
-          Este curso sobre a aplicação da Coleção aprendendo a lidar com Dinheiro integra as ações de acompanhamento pedagógico promovidas pela BEĨ Educação, voltadas aos educadores e às educadoras da <strong>[rede/escola parceira]</strong> que lecionam Matemática para as turmas de <strong>[anos/etapas atendidos]</strong>. Desenvolvido pela equipe pedagógica da BEĨ Educação em parceria com <strong>[a rede parceira]</strong>, o curso é oferecido no formato autoinstrucional — sem a presença de tutores —, permitindo aprender no seu próprio ritmo, de forma prática e acessível.
+          Este curso sobre a aplicação da Coleção <strong> Aprendendo a lidar com Dinheiro</strong> integra as ações de acompanhamento pedagógico promovidas pela <strong>BEĨ Educação</strong>, voltadas aos educadores e às educadoras que aplicam o material. Desenvolvido pela equipe pedagógica da BEĨ Educação, o curso é oferecido no formato <strong>autoinstrucional</strong> — sem a presença de tutores —, permitindo aprender no seu próprio ritmo, de forma prática e acessível.
         </p>
 
         {/* Carrossel de imagens */}

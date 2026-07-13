@@ -7,7 +7,7 @@ import { titleFont } from "@/lib/fonts"
 export default function CourseStructure() {
   const modules = [
     {
-      title: "MÓDULO 1 - Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e sua metodologia de aplicação",
+      title: "MÓDULO 1 - Compreender: Conheça os fundamentos da Educação Financeira e a metodologia da coleção.",
       topics: [
         "Educação Financeira na sala de aula",
         "O programa da BEĨ Educação",
@@ -17,16 +17,16 @@ export default function CourseStructure() {
       ],
     },
     {
-      title: "MÓDULO 2 - Como planejar aulas e orientar os estudantes a realizar os projetos em sala de aula",
+      title: "MÓDULO 2 - Planejar: Organize estratégias, projetos e atividades para sua turma.",
       topics: [
         "Projetos sugeridos nos livros",
         "Matriz de habilidades",
-        "Metas SMART: aperfeiçoa",
+        "Metas SMART: um modelo para aperfeiçoar suas metas",
         "Ferramenta 5W2H: um modelo de plano de ação"
       ],
     },
     {
-      title: "MÓDULO 3 - Como realizar o monitoramento e ferramentas de avaliação de aprendizagem ao longo do programa",
+      title: "MÓDULO 3 - Acompanhar: Utilize ferramentas de monitoramento e avaliação para acompanhar as aprendizagens.",
       topics: [
         "A importância de monitorar as atividades",
         "Erro como pista para ajustar a mediação da aprendizagem",
@@ -35,7 +35,7 @@ export default function CourseStructure() {
       ],
     },
     {
-      title: "MÓDULO 4 - Como realizar o encerramento e consolidar os registros das atividades resultantes do programa",
+      title: "MÓDULO 4 - Refletir e Compartilhar: Analise resultados, registre experiências e valorize as conquistas dos estudantes.",
       topics: [
         "Autoavaliação e Avaliação em Pares",
         "Culminância do Projeto: Valor e Sugestões práticas",

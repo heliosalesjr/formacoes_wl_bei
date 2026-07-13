@@ -41,8 +41,8 @@ export default function PageApresentacao4() {
     },
     {
       icon: MousePointerClick,
-      title: "Como navegar",
-      text: "O site foi pensado para ser intuitivo e flexível. Em cada módulo, você pode ler os textos, explorar os boxes de reflexão, acessar links complementares e baixar os materiais de apoio. Não há uma ordem rígida — o importante é avançar no seu ritmo, conectando teoria e prática.",
+      title: "Como aproveitar melhor a formação",
+      text: "O site foi desenvolvido para ser intuitivo e flexível. Em cada módulo, você poderá explorar conteúdos, realizar atividades, acessar materiais de apoio e registrar reflexões sobre sua prática. Mais do que conhecer a coleção, a proposta é aproximar teoria e prática, incentivando aplicações concretas no contexto escolar. Avance no seu ritmo e aproveite ao máximo a formação.",
       color: "from-yellow-50 to-yellow-100 dark:from-yellow-900/40 dark:to-yellow-900/60 border-yellow-300 dark:border-yellow-700 text-yellow-700",
     },
     {

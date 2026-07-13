@@ -45,10 +45,7 @@ const PageApresentacaoObj = () => {
           </h2>
         </div>
         <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
-          Capacitar educadores para planejar, implementar e avaliar atividades
-          da coleção <strong>Aprendendo a Lidar com Dinheiro</strong>,
-          promovendo a integração da educação financeira no currículo escolar
-          de forma reflexiva, contextualizada e eficiente.
+          Capacitar educadores para planejar, implementar e avaliar práticas pedagógicas em Educação Financeira, utilizando a coleção <strong> Aprendendo a Lidar com Dinheiro</strong> como instrumento para o desenvolvimento da <strong>autonomia</strong>, do <strong>pensamento crítico</strong> e da <strong>cidadania</strong> dos estudantes.
         </p>
       </div>
 
