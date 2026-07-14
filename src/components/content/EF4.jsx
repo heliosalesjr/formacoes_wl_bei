@@ -44,7 +44,7 @@ const EF4 = () => {
           Compreendendo o programa da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span> e a Aprendizagem Baseada em Projetos
         </h1>
         <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-200">
-          O Programa de Educação Financeira da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span> foi elaborado com o objetivo de levar para a sala de aula a Educação Financeira, ancorada na disciplina de Matemática, por meio de um material acessível, que amparado em problemas reais do dia a dia, pretende despertar e mobilizar a atenção do estudante para lidar de forma responsável com seus recursos ao mesmo que apreende conceitos fundamentais da Matemática.
+          O Programa de Educação Financeira da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span> foi elaborado com o objetivo de levar para a sala de aula a Educação Financeira, ancorada na disciplina de Matemática, por meio de um material acessível, que amparado em problemas reais do dia a dia, pretende despertar e mobilizar a atenção do estudante para lidar de forma responsável com seus recursos ao mesmo tempo que aprende conceitos fundamentais da Matemática.
         </p>
       </div>
     </div>

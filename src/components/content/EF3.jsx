@@ -44,8 +44,9 @@ const EF3 = () => {
       
     ],
     [
-      "Utilizada para resolver problemas financeiros específicos e tomar decisões baseadas em cálculos.",
+      
       "Aplicada no dia a dia para tomar decisões financeiras conscientes e responsáveis.",
+      "Utilizada para resolver problemas financeiros específicos e tomar decisões baseadas em cálculos.",
     ],
     [
       "Considerada um tema transversal na educação, integrando-se com várias disciplinas.",
