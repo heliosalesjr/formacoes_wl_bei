@@ -149,7 +149,7 @@ const Mat2 = () => {
         </h3>
         <div className="w-full h-[800px]">
           <iframe
-            src="/Paginas_52_e_53.pdf"
+            src="/educador_pags_46_e_47.pdf"
             className="w-full h-full rounded-xl border"
             title="Amostra Caderno do Educador"
           ></iframe>
