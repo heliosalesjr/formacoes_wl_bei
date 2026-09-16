@@ -59,7 +59,9 @@ const PageApresentacao1 = () => {
                   src={`/${img}`}
                   alt={`Slide ${idx + 1}`}
                   fill
-                  sizes="(max-width: 768px) 100vw, 768px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
+                  quality={90}
+                  priority={idx === 0}
                   className="object-cover object-center"
                 />
               </SwiperSlide>
