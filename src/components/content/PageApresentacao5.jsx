@@ -7,7 +7,8 @@ import { titleFont } from "@/lib/fonts"
 export default function CourseStructure() {
   const modules = [
     {
-      title: "MÓDULO 1 - Compreender: Conheça os fundamentos da Educação Financeira e a metodologia da coleção.",
+      label: "Módulo 1",
+      title: "Compreender: Conheça os fundamentos da Educação Financeira e a metodologia da coleção.",
       topics: [
         "Educação Financeira na sala de aula",
         "O programa da BEĨ Educação",
@@ -17,7 +18,8 @@ export default function CourseStructure() {
       ],
     },
     {
-      title: "MÓDULO 2 - Planejar: Organize estratégias, projetos e atividades para sua turma.",
+      label: "Módulo 2",
+      title: "Planejar: Organize estratégias, projetos e atividades para sua turma.",
       topics: [
         "Projetos sugeridos nos livros",
         "Matriz de habilidades",
@@ -26,7 +28,8 @@ export default function CourseStructure() {
       ],
     },
     {
-      title: "MÓDULO 3 - Acompanhar: Utilize ferramentas de monitoramento e avaliação para acompanhar as aprendizagens.",
+      label: "Módulo 3",
+      title: "Acompanhar: Utilize ferramentas de monitoramento e avaliação para acompanhar as aprendizagens.",
       topics: [
         "A importância de monitorar as atividades",
         "Erro como pista para ajustar a mediação da aprendizagem",
@@ -35,7 +38,8 @@ export default function CourseStructure() {
       ],
     },
     {
-      title: "MÓDULO 4 - Refletir e Compartilhar: Analise resultados, registre experiências e valorize as conquistas dos estudantes.",
+      label: "Módulo 4",
+      title: "Refletir e Compartilhar: Analise resultados, registre experiências e valorize as conquistas dos estudantes.",
       topics: [
         "Autoavaliação e Avaliação em Pares",
         "Culminância do Projeto: Valor e Sugestões práticas",
@@ -66,24 +70,39 @@ export default function CourseStructure() {
   }, [markAsViewed]);
 
   return (
-    <section ref={ref} id="apresentacao-4" className="w-full scroll-mt-20">
-      <div className="container max-w-6xl bg-white dark:bg-slate-800 p-6 rounded-lg shadow-2xl">
-        <h2 className={`${titleFont.className} mb-4 text-4xl text-center font-bold text-slate-600 dark:text-white`}>Módulos</h2>
-        <Accordion type="single" collapsible className="w-ful mx-4">
-          {modules.map((module, index) => (
-            <AccordionItem key={index} value={`module-${index}`} className="text-2xl">
-              <AccordionTrigger className={`${titleFont.className} dark:text-white`}>{module.title}</AccordionTrigger>
-              <AccordionContent>
-                <ul className="list-disc pl-4 space-y-2">
-                  {module.topics.map((topic, i) => (
-                    <li key={i}>{topic}</li>
-                  ))}
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+    <section
+      ref={ref}
+      id="apresentacao-4"
+      className="w-full scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 p-8 shadow-2xl border border-slate-100 dark:border-slate-700 space-y-8"
+    >
+      <h2 className={`${titleFont.className} mb-4 text-4xl text-center font-bold text-slate-600 dark:text-white`}>
+        Módulos
+      </h2>
+
+      <Accordion type="single" collapsible className="w-full space-y-3">
+        {modules.map((module, index) => (
+          <AccordionItem
+            key={index}
+            value={`module-${index}`}
+            className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/60 shadow-sm hover:shadow-md transition-shadow duration-300 px-5"
+          >
+            <AccordionTrigger className={`${titleFont.className} text-left text-lg md:text-xl font-normal text-slate-700 dark:text-slate-200 hover:text-slate-700 dark:hover:text-slate-200 hover:font-normal hover:no-underline`}>
+              <span>
+                <span className="font-bold">{module.label}</span>
+                {" — "}
+                {module.title}
+              </span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <ul className="list-disc pl-6 space-y-2 text-slate-700 dark:text-slate-200 text-base leading-relaxed">
+                {module.topics.map((topic, i) => (
+                  <li key={i}>{topic}</li>
+                ))}
+              </ul>
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </section>
   )
 }
