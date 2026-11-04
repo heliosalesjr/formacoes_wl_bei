@@ -34,6 +34,7 @@ const navigation = {
       { id: 'ef-3b',    title: 'O mesmo problema, duas lentes' },
       { id: 'ef-3c',    title: 'Onde o tema aparece na BNCC' },
       { id: 'ef-3d',    title: 'Educação financeira e contexto' },
+      { id: 'ef-3e',    title: 'Glossário' },
       { id: 'ef-4',     title: 'O programa da BEĨ Educação' },
       { id: 'ef-5',     title: 'Mais sobre o programa' },
     ]
@@ -42,6 +43,7 @@ const navigation = {
     path: '/metodologias',
     components: [
       { id: 'met-1', title: 'Metodologias Ativas' },
+      { id: 'met-1b', title: 'Recursos para aprofundar' },
       { id: 'met-2', title: 'Aprendizagem Baseada em Projetos' },
       { id: 'met-3', title: 'ABP - Resumo' },
       { id: 'met-4', title: 'Pequenos Projetos Didáticos Ativos' },

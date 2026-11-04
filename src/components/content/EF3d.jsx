@@ -44,8 +44,8 @@ const EF3d = () => {
       <div className="relative w-full h-[55vh] min-h-[340px] md:h-[65vh]">
         {imagemDisponivel ? (
           <Image
-            src="/contexto-escolhas.jpg"
-            alt="Cena cotidiana que mostra as condições concretas em que as decisões financeiras são tomadas"
+            src="/rua1.jpg"
+            alt="Rua comercial movimentada, com pessoas passando entre lojas cobertas de cartazes de crediário, empréstimo fácil e parcelamento em 12x sem juros"
             fill
             sizes="(max-width: 768px) 100vw, 1024px"
             className="object-cover object-center"

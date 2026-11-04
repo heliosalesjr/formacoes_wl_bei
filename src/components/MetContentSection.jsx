@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 import Met1 from './content/Met1'
+import Met1b from './content/Met1b'
 import Met2 from './content/Met2'
 import Met3 from './content/Met3'
 import Met4 from './content/Met4'
@@ -17,6 +18,10 @@ const MetContentSection = () => {
         <div className="mx-auto max-w-5xl space-y-8">
           <FadeInWhenVisible>
             <Met1 />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <Met1b />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>

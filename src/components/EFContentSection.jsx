@@ -7,6 +7,7 @@ import EF3 from "./content/EF3"
 import EF3b from "./content/EF3b"
 import EF3c from "./content/EF3c"
 import EF3d from "./content/EF3d"
+import EF3e from "./content/EF3e"
 import EF4 from "./content/EF4"
 import EF5 from "./content/EF5"
 
@@ -38,6 +39,10 @@ export default function EFContentSection() {
 
             <FadeInWhenVisible>
               <EF3d />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+              <EF3e />
             </FadeInWhenVisible>
 
             <FadeInWhenVisible>
