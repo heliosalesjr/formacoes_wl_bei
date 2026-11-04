@@ -20,7 +20,7 @@ const Mat9 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          markAsViewed('what');
+          markAsViewed('enc-3');
         }
       },
       { threshold: 0.5 }
@@ -53,7 +53,7 @@ const Mat9 = () => {
   }
 
   return (
-    <div ref={ref} id="what" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto space-y-6">
+    <div ref={ref} id="enc-3" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto space-y-6">
       <h2 className={`${titleFont.className} text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4`}>
         NESSE MÓDULO EU:
       </h2>

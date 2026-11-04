@@ -5,6 +5,7 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 import Met1 from './content/Met1'
 import Met1b from './content/Met1b'
 import Met2 from './content/Met2'
+import Met2b from './content/Met2b'
 import Met3 from './content/Met3'
 import Met4 from './content/Met4'
 import Met5 from './content/Met5'
@@ -26,6 +27,10 @@ const MetContentSection = () => {
 
           <FadeInWhenVisible>
             <Met2 />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <Met2b />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>

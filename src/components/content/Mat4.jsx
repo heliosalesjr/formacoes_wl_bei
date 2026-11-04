@@ -65,7 +65,7 @@ export default function Mat4() {
         const observer = new IntersectionObserver(
           ([entry]) => {
             if (entry.isIntersecting) {
-              markAsViewed('mat-444');
+              markAsViewed('mat-4');
             }
           },
           { threshold: 0.1 }
@@ -80,7 +80,7 @@ export default function Mat4() {
 
   return (
     <div ref={ref} 
-        id="mat-444" 
+        id="mat-4" 
         className="scroll-mt-20 max-w-5xl mx-auto my-16 p-6 bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 rounded-2xl shadow-2xl pt-16 pb-16">
       <motion.h1
 

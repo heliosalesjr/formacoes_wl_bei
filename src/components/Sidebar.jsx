@@ -45,6 +45,7 @@ const navigation = {
       { id: 'met-1', title: 'Metodologias Ativas' },
       { id: 'met-1b', title: 'Recursos para aprofundar' },
       { id: 'met-2', title: 'Aprendizagem Baseada em Projetos' },
+      { id: 'met-2b', title: 'Atividade ou projeto?' },
       { id: 'met-3', title: 'ABP - Resumo' },
       { id: 'met-4', title: 'Pequenos Projetos Didáticos Ativos' },
       { id: 'met-5', title: 'Atividades de Projeto' },
@@ -58,7 +59,7 @@ const navigation = {
       { id: 'mat-1',   title: 'Estrutura do Livro do Estudante' },
       { id: 'mat-2',   title: 'Estrutura do Caderno do Educador' },
       { id: 'mat-3',   title: 'Como iniciar a aplicação' },
-      { id: 'mat-444', title: 'Diagnóstico do perfil da turma' },
+      { id: 'mat-4',   title: 'Diagnóstico do perfil da turma' },
       { id: 'mat-5',   title: 'Diário de Bordo' },
       { id: 'mat-6',   title: 'Padlet' },
       { id: 'mat-7',   title: 'Saiba Mais - Links' },
@@ -67,8 +68,9 @@ const navigation = {
   'Encerramento': {
     path: '/encerramento',
     components: [
-      { id: 'mat-8', title: 'Encerramento do Módulo 1' },
-      { id: 'what',  title: 'O que aprendi?' },
+      { id: 'enc-1', title: 'Encerramento do Módulo 1' },
+      { id: 'enc-2', title: 'Quiz do Módulo 1' },
+      { id: 'enc-3', title: 'O que aprendi?' },
     ]
   },
 };

@@ -84,7 +84,7 @@ const Mat8 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          markAsViewed('mat-8');
+          markAsViewed('enc-1');
         }
       },
       { threshold: 0.5 }
@@ -98,7 +98,7 @@ const Mat8 = () => {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="mat-8" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-lg shadow-2xl p-6 md:p-10 space-y-8 text-center">
+    <div ref={ref} id="enc-1" className="scroll-mt-20 bg-white dark:bg-slate-800 rounded-lg shadow-2xl p-6 md:p-10 space-y-8 text-center">
       {/* Título */}
       <h2 className={`${titleFont.className} text-2xl md:text-4xl font-bold text-slate-700 dark:text-slate-200`}>
         Encerrando o Módulo 1

@@ -201,7 +201,7 @@ export default function EncerramentoQuiz() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          markAsViewed("modulo1-quiz");
+          markAsViewed("enc-2");
         }
       },
       { threshold: 0.5 }
@@ -252,8 +252,8 @@ export default function EncerramentoQuiz() {
     <div className="rounded-xl bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 p-8 shadow-2xl border border-slate-100 dark:border-slate-700">
       <div
         ref={ref}
-        id="modulo1-quiz"
-        className="flex items-center justify-center gap-3 mb-8"
+        id="enc-2"
+        className="scroll-mt-20 flex items-center justify-center gap-3 mb-8"
       >
         <div className="scroll-mt-20 mt-8 bg-white dark:bg-slate-800 text-center">
           <h2 className={`${titleFont.className} text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:bg-none dark:text-white pb-8 p-4`}>
