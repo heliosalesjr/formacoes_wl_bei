@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useSidebar } from "@/contexts/SidebarContext";
-import { ExternalLink, TrendingDown, HeartPulse, Building2, GraduationCap, Video, X } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink, TrendingDown, HeartPulse, Building2, GraduationCap, BarChart3, Video, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { titleFont } from "@/lib/fonts";
 
@@ -169,12 +170,42 @@ export default function Modulo1Midia() {
             <h3 className={`${titleFont.className} text-2xl font-semibold text-slate-800 dark:text-slate-200`}>Impacto Social e Econômico</h3>
           </div>
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
-            O impacto social e econômico do alto endividamento não é negligenciável. Empresas e sindicatos já vêm alertando o governo sobre o alto endividamento dos trabalhadores, que limita o consumo interno e amplia vulnerabilidades sociais. 
-
+            O impacto social e econômico do alto endividamento não é negligenciável. Como mostra reportagem do{" "}
+            <a
+              href="https://blogs.correiobraziliense.com.br/capital-sa/2025/05/22/empresas-alertam-governo-sobre-alto-endividamento-dos-trabalhadores/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-600 font-medium hover:underline inline-flex items-center gap-1"
+            >
+              Correio Braziliense <ExternalLink className="h-4 w-4" />
+            </a>
+            , empresas e sindicatos já vêm alertando o governo sobre o alto endividamento dos trabalhadores, que limita o consumo interno e amplia vulnerabilidades sociais.
           </p>
 
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed pt-6">
-            Diante desse panorama, a educação financeira emerge como intervenção estratégica, capaz de articular conhecimento técnico e atitudes sustentáveis no uso do crédito. O curso que você está desenvolvendo pode mostrar caminhos para romper esse ciclo: Se capacitar para estimular o protagonismo de seus estudantes e fortalecer a cultura do planejamento financeiro na escola. Ao revelar que finanças conscientes e bem-estar emocional andam juntos, promovemos não apenas cidadãos mais competentes, mas também comunidades mais saudáveis e resilientes.
+            A esse quadro soma-se um vetor recente de pressão sobre o orçamento doméstico: as apostas esportivas. Um estudo da CNC de abril de 2026, divulgado pelo{" "}
+            <a
+              href="https://movimentoeconomico.com.br/economia/varejo/2026/04/29/cnc-bets-drenam-r-30-bi-por-mes-e-e-levam-270-mil-familias-a-inadimplencia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-600 font-medium hover:underline inline-flex items-center gap-1"
+            >
+              Movimento Econômico <ExternalLink className="h-4 w-4" />
+            </a>
+            , calcula que as bets drenam mais de <strong>R$ 30 bilhões por mês</strong> e empurraram cerca de <strong>268 mil famílias</strong> para a inadimplência grave, com peso maior nas de baixa renda. Em maio de 2026, reportagem do{" "}
+            <a
+              href="https://www.intercept.com.br/2026/05/04/bets-tiram-mais-dinheiro-que-juros/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-600 font-medium hover:underline inline-flex items-center gap-1"
+            >
+              Intercept <ExternalLink className="h-4 w-4" />
+            </a>{" "}
+            mostrou que as bets já tiram mais dinheiro das famílias pobres do que os juros.
+          </p>
+
+          <p className="text-slate-700 dark:text-slate-200 leading-relaxed pt-6">
+            Diante desse panorama, a educação financeira emerge como intervenção estratégica, capaz de articular conhecimento técnico e atitudes sustentáveis no uso do crédito. Ao revelar que finanças conscientes e bem-estar emocional andam juntos, promovemos não apenas cidadãos mais competentes, mas também comunidades mais saudáveis e resilientes.
 
           </p>
         </section>
@@ -186,12 +217,38 @@ export default function Modulo1Midia() {
             <h3 className={`${titleFont.className} text-2xl font-semibold text-slate-800 dark:text-slate-200`}>Educação Financeira e Bem-Estar</h3>
           </div>
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mb-4">
-            Promover a saúde financeira é, portanto, investir em bem-estar, autonomia e cidadania. Ao compreender que finanças conscientes e equilíbrio emocional caminham juntos, formamos não apenas cidadãos mais competentes, mas também comunidades mais saudáveis, resilientes e solidárias  pilares essenciais para um país mais equilibrado e próspero.
+            Promover a saúde financeira é, portanto, investir em bem-estar, autonomia e cidadania. Ao compreender que finanças conscientes e equilíbrio emocional caminham juntos, formamos não apenas cidadãos mais competentes, mas também comunidades mais saudáveis, resilientes e solidárias  pilares essenciais para um país mais equilibrado e próspero. Essa é também a direção das políticas públicas: segundo a{" "}
+            <a
+              href="https://agenciagov.ebc.com.br/noticias/202610/mec-apoia-escolas-no-ensino-de-educacao-financeira"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-600 font-medium hover:underline inline-flex items-center gap-1"
+            >
+              Agência Gov <ExternalLink className="h-4 w-4" />
+            </a>
+            , o material de apoio do MEC trata a educação financeira como ferramenta de formação cidadã, ajudando estudantes e famílias a planejar, avaliar escolhas e reconhecer riscos como o endividamento, as fraudes digitais e as apostas.
           </p>
 
         </section>
 
-        {/* Bloco 5 – Vídeo */}
+        {/* Bloco 5 – Infográfico */}
+        <section className="bg-white/80 dark:bg-slate-800/80 p-8 rounded-xl shadow-md border-l-4 border-l-indigo-500 hover:shadow-lg transition-all duration-300">
+          <div className="flex items-center gap-3 mb-6">
+            <BarChart3 className="h-7 w-7 text-indigo-600" />
+            <h3 className={`${titleFont.className} text-2xl font-semibold text-slate-800 dark:text-slate-200`}>Infográfico</h3>
+          </div>
+          <div className="flex justify-center">
+            <Image
+              src="/infografico-midia.png"
+              alt="Infográfico: Por que falar de dinheiro na escola? Quatro retratos do Brasil de hoje — 82% das famílias brasileiras estão endividadas (Peic/CNC, ago/2026); dívida pesa na cabeça, conta atrasada é gatilho de ansiedade e estresse (Sicredi); R$ 30 bi por mês saem do orçamento das famílias para as bets (CNC, abr/2026); 45% dos estudantes de 15 anos ficaram nos níveis mais baixos de letramento financeiro (OCDE, PISA 2022)."
+              width={570}
+              height={764}
+              className="w-full h-auto max-w-xl rounded-lg shadow-lg"
+            />
+          </div>
+        </section>
+
+        {/* Bloco 6 – Vídeo */}
         <section className="bg-white/80 dark:bg-slate-800/80 p-8 rounded-xl shadow-md border-l-4 border-l-purple-500 hover:shadow-lg transition-all duration-300">
           <div className="flex items-center gap-3 mb-4">
             <Video className="h-7 w-7 text-purple-600" />

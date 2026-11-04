@@ -64,7 +64,7 @@ const EF2 = () => {
             <h3 className={`${titleFont.className} text-xl font-bold text-slate-700 dark:text-slate-200`}>Presente na BNCC</h3>
           </div>
           <p className="text-gray-600 dark:text-slate-300 leading-relaxed">
-            A Base Nacional Comum Curricular (BNCC) inclui a Educação Financeira como um tema obrigatório, presente nos currículos escolares de todo o país.
+            A Base Nacional Comum Curricular (BNCC) inclui a Educação Financeira como um tema contemporâneo transversal, presente nos currículos escolares de todo o país.
           </p>
         </div>
 

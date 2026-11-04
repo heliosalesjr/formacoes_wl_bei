@@ -31,6 +31,9 @@ const navigation = {
       { id: 'ef-intro', title: 'Introdução' },
       { id: 'ef-2',     title: 'Ed. Financeira no Ensino Fundamental' },
       { id: 'ef-3',     title: 'Matemática Financeira vs Ed. Financeira' },
+      { id: 'ef-3b',    title: 'O mesmo problema, duas lentes' },
+      { id: 'ef-3c',    title: 'Onde o tema aparece na BNCC' },
+      { id: 'ef-3d',    title: 'Educação financeira e contexto' },
       { id: 'ef-4',     title: 'O programa da BEĨ Educação' },
       { id: 'ef-5',     title: 'Mais sobre o programa' },
     ]

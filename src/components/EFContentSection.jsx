@@ -4,6 +4,9 @@ import Link from "next/link"
 import EFIntro from "./content/EFIntro"
 import EF2 from "./content/EF2"
 import EF3 from "./content/EF3"
+import EF3b from "./content/EF3b"
+import EF3c from "./content/EF3c"
+import EF3d from "./content/EF3d"
 import EF4 from "./content/EF4"
 import EF5 from "./content/EF5"
 
@@ -23,6 +26,18 @@ export default function EFContentSection() {
 
             <FadeInWhenVisible>
               <EF3 />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+              <EF3b />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+              <EF3c />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+              <EF3d />
             </FadeInWhenVisible>
 
             <FadeInWhenVisible>

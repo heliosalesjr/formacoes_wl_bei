@@ -39,7 +39,16 @@ const EFIntro = () => {
       {/* Texto sobreposto */}
       <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white px-6 py-4 z-10">
         <p className="max-w-4xl mx-auto text-sm md:text-base leading-relaxed text-center">
-          Segundo a Organização para a Cooperação e Desenvolvimento Econômico (OCDE), a Educação Financeira pode ser definida como o processo pelo qual consumidores e/ou investidores financeiros melhoram sua compreensão sobre produtos e conceitos financeiros para desenvolver a capacidade de adquirir as habilidades e a confiança necessárias para se tornarem mais conscientes dos riscos na hora da tomada de decisões.
+          Segundo a Organização para a Cooperação e Desenvolvimento Econômico{' '}
+          <a
+            href="https://www.oecd.org/en/publications/improving-financial-literacy_9789264012578-en.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold underline underline-offset-2 hover:text-blue-300 transition-colors"
+          >
+            (OCDE, 2005)
+          </a>
+          , a Educação Financeira pode ser definida como o processo pelo qual consumidores e/ou investidores financeiros melhoram sua compreensão sobre produtos e conceitos financeiros para desenvolver a capacidade de adquirir as habilidades e a confiança necessárias para se tornarem mais conscientes dos riscos na hora da tomada de decisões.
         </p>
       </div>
 
