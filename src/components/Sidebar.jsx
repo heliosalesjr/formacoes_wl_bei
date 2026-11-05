@@ -48,6 +48,7 @@ const navigation = {
       { id: 'met-2b', title: 'Atividade ou projeto?' },
       { id: 'met-3', title: 'ABP - Resumo' },
       { id: 'met-4', title: 'Pequenos Projetos Didáticos Ativos' },
+      { id: 'met-4b', title: 'Projetos na prática' },
       { id: 'met-5', title: 'Atividades de Projeto' },
       { id: 'met-5b', title: 'Fator de Mobilização' },
       { id: 'met-6', title: 'Mais sobre mobilização' },

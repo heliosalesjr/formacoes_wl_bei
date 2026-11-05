@@ -1,5 +1,6 @@
 "use client";
 import React from 'react'
+import Image from 'next/image'
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { FaUsersCog, FaBookOpen, FaChalkboardTeacher } from 'react-icons/fa'
@@ -37,6 +38,23 @@ const Mat1 = () => {
         </h2>
         <p className="text-slate-700 dark:text-slate-200 text-sm md:text-base max-w-3xl mx-auto">
           O Livro do Estudante aborda conteúdos do currículo de Matemática ancorados em conceitos de Educação Financeira.
+        </p>
+      </div>
+
+      {/* Capas do Livro do Estudante */}
+      <div className="rounded-2xl bg-gradient-to-br from-blue-50 to-slate-50 dark:from-slate-900/60 dark:to-slate-700/40 px-6 py-8 md:px-10">
+        <div className="flex justify-center">
+          <Image
+            src="/3_e_8_e.png"
+            alt="Capas do Livro do Estudante da coleção Aprendendo a Lidar com Dinheiro: à esquerda o volume do 3º ano, do Ensino Fundamental anos iniciais, e à direita o volume do 8º ano"
+            width={1329}
+            height={769}
+            className="w-full h-auto max-w-2xl transition-transform duration-500 hover:scale-[1.02]"
+            priority
+          />
+        </div>
+        <p className="mt-4 text-center text-sm text-slate-500 dark:text-slate-400">
+          Livro do Estudante — volumes do 3º e do 8º ano
         </p>
       </div>
 
